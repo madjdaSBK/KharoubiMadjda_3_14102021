@@ -1,0 +1,30 @@
+/* placer dans fonts.scss */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap');
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer_logo
+{
+    font-family: 'Shrikhand', cursive;
+}
+
+/* Placer dans foundations.scss */
+
+html, body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+
+/* Header */
+
+header
+{
+    align-items: center;
+}
