@@ -1,4 +1,4 @@
-/* placer dans fonts.scss */
+/* Placer dans base/fonts.scss */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap');
 
@@ -12,19 +12,38 @@ body
     font-family: 'Shrikhand', cursive;
 }
 
-/* Placer dans foundations.scss */
+/* Placer dans base/foundations.scss */
 
-html, body 
+html, body
 {
     margin: 0;
     padding: 0;
 }
 
 a
+{
+    text-decoration: none;
+}
 
-/* Header */
+li {
+  list-style-type: none;
+}
+
+/* Placer dans layouts/header.scss */
 
 header
 {
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
+
+/* Placer dans layouts/header.scss */
+
+#location
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
