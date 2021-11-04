@@ -1,10 +1,14 @@
 /* Placer dans base/fonts.scss */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Shrikhand&display=swap');
 body
 {
     font-family: 'Roboto', sans-serif;
+}
+
+p
+{
+    font-weight: lighter;
 }
 
 .footer_logo
@@ -39,9 +43,35 @@ header
 
 /* Placer dans layouts/header.scss */
 
-#location
+.location
 {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    background-color: rgb(226, 225, 225);
+    padding: 16px;
+    box-shadow: 0px 2px 5px rgb(196, 195, 195) inset;
+    &--i 
+    {
+        margin-right: 0px;
+    }
+    &--input
+    {
+        border: none;
+        font-size: large;
+        text-align: center;
+        padding: -1rem;
+        background-color: rgb(226, 225, 225);
+        
+    }
 }
+
+/* Section reservation */
+
+.about
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
