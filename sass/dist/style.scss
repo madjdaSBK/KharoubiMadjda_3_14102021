@@ -8,7 +8,7 @@ $omf_map:rgb(226, 225, 225);
 
 /* Placer dans base/fonts.scss */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap');
 body
 {
     font-family: 'Roboto', sans-serif;
@@ -58,6 +58,7 @@ header
 {
     display: flex;
     justify-content: center;
+    margin-top: 16px;
 }
 
 /* Placer dans layouts/header.scss */
