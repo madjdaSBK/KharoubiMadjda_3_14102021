@@ -4,7 +4,7 @@ $omf_pink:#FF79DA;
 $omf_green:#99E2D0;
 $omg_green--text:#0d8a68;
 $omf_shadow:rgb(196, 195, 195);
-$omf_map:rgb(226, 225, 225);
+$omf_map:rgb(233, 233, 233);
 $omf_dark_grey:#353535;
 
 /* Placer dans base/fonts.scss */
@@ -76,19 +76,22 @@ header
     align-items: center;
     margin-top: 10px;
     background-color: $omf_map;
-    padding: 16px;
+    padding: 5px;
     box-shadow: 0px 2px 5px $omf_shadow inset;
     &--i 
     {
-        padding-bottom: 1px;
+        padding-bottom: 3px;
+        padding-right: 20px;
+        
     }
-    &--input
+    &--p
     {
         border: none;
-        font-size: large;
+        font-size: 20px;
         text-align: center;
         background-color: $omf_map;
-        padding: initial;
+        padding-right:40px;
+        font-weight: 400;
         
     }
 }
