@@ -5,7 +5,7 @@ $omf_green:#99E2D0;
 $omg_green--text:#0d8a68;
 $omf_shadow:rgb(196, 195, 195);
 $omf_map:rgb(226, 225, 225);
-
+$omf_dark_grey:#353535;
 
 /* Placer dans base/fonts.scss */
 
@@ -170,7 +170,7 @@ header
         span
         {
             position: absolute;
-            left: 300px;
+            left: 290px;
             background-color: $omf_green;
             color: $omg_green--text;
             padding: 10px;
@@ -179,11 +179,26 @@ header
         }
         img
         {
+            object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
         figcaption
         {
             display: flex;
+            padding: 16px;
+            justify-content: space-between;
+            color: black;
+            H4, p
+            {
+                margin: initial;
+                padding-bottom: 5px;
+            }
+            i
+            {
+                font-size: 30px;
+                margin: 3px 10px;
+                color: $omf_dark_grey;
+            }
         }
     }
 }
@@ -192,7 +207,7 @@ header
 .footer
 {
     padding: 20px;
-    background-color: #353535;
+    background-color: $omf_dark_grey;
     &_logo
     {
         color: white;
@@ -201,6 +216,20 @@ header
     {
         display: flex;
         flex-direction: column;
+        &--lines
+        {
+            color: white;
+            padding: 5px;
+        }
+        &--restaurant
+        {
+            padding-right: 10px;
+        }
+        &--partner
+        {
+            padding-right: 4px;
+        }
     }
+
     
 }
