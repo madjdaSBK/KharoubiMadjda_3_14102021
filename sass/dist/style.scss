@@ -2,6 +2,7 @@
 $omf_violet:#9356DC;
 $omf_pink:#FF79DA;
 $omf_green:#99E2D0;
+$omg_green--text:#0d8a68;
 $omf_shadow:rgb(196, 195, 195);
 $omf_map:rgb(226, 225, 225);
 
@@ -43,13 +44,18 @@ li {
 
 main img
 {
-    height: 220px;
+    height: 200px;
     width: 100%;
 }
 
-h1
+main #operation, #restaurants
 {
-    margin-left: 16px;
+    padding: 40px 30px;
+}
+
+figure
+{
+    margin: 0;
 }
 
 /* Placer dans layouts/header.scss */
@@ -129,7 +135,7 @@ header
             background-color: whitesmoke;
             border-radius: 20px;
             box-shadow: 0 5px 5px 1px rgb(228, 228, 228);
-            padding: 25px;
+            padding: 25px 20px;
             div
             {
                background-color: $omf_violet; 
@@ -152,5 +158,49 @@ header
     }
 }
 
+/* Section restaurant */
+.restaurants
+{
+    background-color: whitesmoke;
+    .restaurants_cards
+    {
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 16px;
+        span
+        {
+            position: absolute;
+            left: 300px;
+            background-color: $omf_green;
+            color: $omg_green--text;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        img
+        {
+            border-radius: 10px 10px 0 0;
+        }
+        figcaption
+        {
+            display: flex;
+        }
+    }
+}
 
-
+/* Footer*/
+.footer
+{
+    padding: 20px;
+    background-color: #353535;
+    &_logo
+    {
+        color: white;
+    }
+    &_container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

@@ -28,12 +28,16 @@ li {
 }
 
 main img {
-  height: 220px;
+  height: 200px;
   width: 100%;
 }
 
-h1 {
-  margin-left: 16px;
+main #operation, #restaurants {
+  padding: 40px 30px;
+}
+
+figure {
+  margin: 0;
 }
 
 /* Placer dans layouts/header.scss */
@@ -126,7 +130,7 @@ header {
   border-radius: 20px;
   -webkit-box-shadow: 0 5px 5px 1px #e4e4e4;
           box-shadow: 0 5px 5px 1px #e4e4e4;
-  padding: 25px;
+  padding: 25px 20px;
 }
 
 .operation ul li div {
@@ -145,5 +149,56 @@ header {
 
 .operation ul li span {
   margin-left: 20px;
+}
+
+/* Section restaurant */
+.restaurants {
+  background-color: whitesmoke;
+}
+
+.restaurants .restaurants_cards {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.restaurants .restaurants_cards span {
+  position: absolute;
+  left: 300px;
+  background-color: #99E2D0;
+  color: #0d8a68;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.restaurants .restaurants_cards img {
+  border-radius: 10px 10px 0 0;
+}
+
+.restaurants .restaurants_cards figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Footer*/
+.footer {
+  padding: 20px;
+  background-color: #353535;
+}
+
+.footer_logo {
+  color: white;
+}
+
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
