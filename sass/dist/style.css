@@ -9,7 +9,7 @@ p {
   font-weight: lighter;
 }
 
-.footer_logo {
+.footer_logo, main h1 {
   font-family: 'Shrikhand', cursive;
 }
 
@@ -237,6 +237,7 @@ figure {
 }
 
 /* Les 4 menus */
+/* header */
 .menu_header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,4 +256,6 @@ figure {
   position: absolute;
   left: 20px;
 }
+
+/* header */
 /*# sourceMappingURL=style.css.map */
