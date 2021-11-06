@@ -41,7 +41,7 @@ figure {
 }
 
 /* Placer dans layouts/header.scss */
-header {
+#header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +51,7 @@ header {
   margin-top: 16px;
 }
 
-/* Placer dans layouts/header.scss */
+/* Placer dans layouts/location.scss */
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,13 +199,13 @@ header {
 .restaurants .restaurants_cards figcaption i {
   font-size: 30px;
   margin: 3px 10px;
-  color: #353535;
+  color: #252525;
 }
 
 /* Footer*/
 .footer {
   padding: 20px;
-  background-color: #353535;
+  background-color: #252525;
 }
 
 .footer_logo {
@@ -225,6 +225,7 @@ header {
 .footer_container--lines {
   color: white;
   padding: 5px;
+  /* Question Quentin : Pourquoi ce padding ne fonctionne pas ? */
 }
 
 .footer_container--restaurant {
@@ -233,5 +234,25 @@ header {
 
 .footer_container--partner {
   padding-right: 4px;
+}
+
+/* Les 4 menus */
+.menu_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+}
+
+.menu_header--i {
+  color: black;
+  position: absolute;
+  left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@ $omf_green:#99E2D0;
 $omg_green--text:#0d8a68;
 $omf_shadow:rgb(196, 195, 195);
 $omf_map:rgb(233, 233, 233);
-$omf_dark_grey:#353535;
+$omf_dark_grey:#252525;
 
 /* Placer dans base/fonts.scss */
 
@@ -60,7 +60,7 @@ figure
 
 /* Placer dans layouts/header.scss */
 
-header
+#header
 {
     display: flex;
     justify-content: center;
@@ -222,7 +222,7 @@ header
         &--lines
         {
             color: white;
-            padding: 5px;
+            padding: 5px; /* Question Quentin : Pourquoi ce padding ne fonctionne pas ? */
         }
         &--restaurant
         {
@@ -232,5 +232,22 @@ header
         {
             padding-right: 4px;
         }
+    }
+}
+
+
+/* Les 4 menus */
+
+.menu_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    &--i
+    {
+        color: black;
+        position: absolute;
+        left: 20px;
     }
 }
