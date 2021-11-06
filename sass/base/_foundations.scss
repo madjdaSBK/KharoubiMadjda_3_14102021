@@ -1,0 +1,30 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+main img
+{
+    height: 200px;
+    width: 100%;
+}
+
+main #operation, #restaurants
+{
+    padding: 40px 30px;
+}
+
+figure
+{
+    margin: 0;
+}
