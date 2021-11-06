@@ -6,6 +6,7 @@ $omg_green--text:#0d8a68;
 $omf_shadow:rgb(196, 195, 195);
 $omf_map:rgb(233, 233, 233);
 $omf_dark_grey:#252525;
+$omg_white_smoke: whitesmoke;
 
 /* Placer dans base/fonts.scss */
 
@@ -104,7 +105,7 @@ figure
     flex-direction: column;
     text-align: center;
     padding: 40px 20px 40px 20px;
-    background-color: whitesmoke;
+    background-color: $omg_white_smoke;
     h1
     {
         margin: 0; 
@@ -255,4 +256,16 @@ figure
     }
 }
 
-/* header */
+/* Main */
+
+.main_header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &--i
+    {
+        font-size: 30px;
+    }
+    
+}

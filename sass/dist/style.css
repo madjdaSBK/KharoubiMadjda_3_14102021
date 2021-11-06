@@ -257,5 +257,19 @@ figure {
   left: 20px;
 }
 
-/* header */
+/* Main */
+.main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_header--i {
+  font-size: 30px;
+}
 /*# sourceMappingURL=style.css.map */
