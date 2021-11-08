@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<title> ohmyfood - La note enchantée </title>
+	<title> ohmyfood - La palette du goût </title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo/ohmyfood.png">
     <link rel="stylesheet" type="text/css" href="/sass/dist/style.css">
     <script src="https://kit.fontawesome.com/98b1e02932.js" crossorigin="anonymous"></script>
@@ -24,153 +24,166 @@
         </a>
     </header> 
 
-<!-- Main -->
-    <main class="main_menus">
-        <img src="images/restaurants/menu-note.jpg" alt="la-note-enchantée">
-        <header class="main_header">
-            <h1>La note enchantée</h1>
-            <i class="far fa-heart main_header--icon"></i>
-        </header>
-        <div id="full_menu">
-<!-- Section entrées -->
-            <section id="starter">
-                <header class="menus_header">
-                    <h3>ENTRÉES</h3>
-                    <div class="menu_header-line"></div>
-                </header>
-
-                <div class="menu">
-                    <h4>Ravioles de foie gras </h4>
-                    <div class="menu_caption">
-                        <p>Accompagnés de leur crème à la truffe</p>
-                        <span><strong>25€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-                </div>
-
-                <div class="menu">
-                    <h4>Caviar osciètre </h4>
-                    <div class="menu_caption">
-                        <p>Sur blini à la farine de blé noir</p>
-                        <span><strong>35€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-               </div>
-
-               <div class="menu">
-                   <h4>Homard et espuma de potiron</h4>
-                   <div class="menu_caption">
-                       <p>Mariné aux zestes d'orange</p>
-                       <span><strong>20€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-                </div>
-
-                <div class="menu">
-                    <h4>Foie gras de canard cuit entier</h4>
-                    <div class="menu_caption">
-                        <p>Confiture de figue et pain toasté</p>
-                        <span><strong>35€</strong></span>
-                     </div>
-                     <button class="check_btn">
-                         <i class="far fa-check-circle"></i>
-                     </button>
-                 </div>
-            </section>
-
-<!-- Section plats -->
-            <section id="meals">
-                <header class="menu_header">
-                    <h3>PLATS</h3>
-                    <div class="menu_header-line"></div>
-                </header>
-
-                <div class="menu">
-                    <h4>Noix de coquilles Saint-Jacques</h4>
-                    <div class="menu_caption">
-                        <p>Sur lit de purée de céleri-rave</p>
-                        <span><strong>40€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-                </div>
-
-                <div class="menu">
-                    <h4>Langoustine poêlée</h4>
-                    <div class="menu_caption">
-                        <p>Purée de patate douce</p>
-                        <span><strong>35€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-               </div>
-
-               <div class="menu">
-                   <h4>Mijoté de queue de boeuf </h4>
-                   <div class="menu_caption">
-                       <p>Et riz sauvage aux zestes de citron</p>
-                       <span><strong>44€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-                </div>
-            </section>
-
-<!-- Section desserts -->
-            <section id="desserts">
-                <header class="menu_header">
-                    <h3>DESSERTS</h3>
-                    <div class="menu_header-line"></div>
-                </header>
-
-                <div class="menu">
-                    <h4>Macaron noisette et chocolat</h4>
-                    <div class="menu_caption">
-                        <p>Glace au caramel brun et sel de Guérande</p>
-                        <span><strong>18€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-                </div>
-
-                <div class="menu">
-                    <h4>Baba au rhum revisité</h4>
-                    <div class="menu_caption">
-                        <p>Avec son coulis de citron</p>
-                        <span><strong>22€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-               </div>
-
-               <div class="menu">
-                   <h4>Tarte au citron meringuée</h4>
-                   <div class="menu_caption">
-                       <p>Déstructurée</p>
-                       <span><strong>23€</strong></span>
-                    </div>
-                    <button class="check_btn">
-                        <i class="far fa-check-circle"></i>
-                    </button>
-                </div>
-            </section>
+    <!-- Main -->
+    <main class="main">
+        <div class="main_img">
+            <img class="main_img--img" src="images/restaurants/menu-palette.jpg" alt="la_palette_du_goût">
         </div>
 
-<!-- Section commande -->
-        <button class="order_btn">
-            <span>Commander</span>
-        </button>
+        <!-- Menu-->
+        
+        <div class="main_container">
+            <header class="main_header">
+                <h1>La palette du goût</h1>
+                <div class="main_header--i" >
+                    <i class="far fa-heart main_header--heart"></i> 
+                </div>
+            </header>
+
+            <div class="main_menu">
+
+                <!-- Section entrées -->  
+
+                <section class="meal">
+                    <header class="meal_header">
+                        <h4 class="meal_header--title">ENTRÉES</h4>
+                        <div class="meal_header--line"></div>
+                    </header>
+                
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Ravioles de foie gras </h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Accompagnés de leur crème à la truffe</p>
+                            <span class="meal_options--captions"><strong>25€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Caviar osciètre </h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Sur blini à la farine de blé noir</p>
+                            <span class="meal_options--captions"><strong>35€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+               
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Homard et espuma de potiron</h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Mariné aux zestes d'orange</p>
+                            <span class="meal_options--captions"><strong>20€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Foie gras de canard cuit entier</h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Confiture de figue et pain toasté</p>
+                            <span class="meal_options--captions"><strong>35€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Section plats -->
+                
+                <section class="meal">
+                    <header class="meal_header">
+                        <h4 class="meal_header--title">PLATS</h4>
+                        <div class="meal_header--line"></div>
+                    </header>
+                
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Noix de coquilles Saint-Jacques</h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Sur lit de purée de céleri-rave</p>
+                            <span class="meal_options--captions"><strong>40€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Langoustine poêlée</h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Purée de patate douce</p>
+                            <span class="meal_options--captions"><strong>35€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+               
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Mijoté de queue de boeuf</h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Et riz sauvage aux zestes de citron</p>
+                            <span class="meal_options--captions"><strong>44€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Section desserts -->
+                
+                <section class="meal">
+                    <header class="meal_header">
+                        <h4 class="meal_header--title">DESSERTS</h4>
+                        <div class="meal_header--line"></div>
+                    </header>
+                
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Macaron noisette et chocolat</h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Glace au caramel brun et sel de Guérande</p>
+                            <span class="meal_options--captions"><strong>18€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Baba au rhum revisité </h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Avec son coulis de citron</p>
+                            <span class="meal_options--captions"><strong>22€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+               
+                    <div class="meal_options">
+                        <h4 class="meal_options--title">Tarte au citron meringuée </h4>
+                        <div class="meal_options--figcaption">
+                            <p class="meal_options--captions">Déstructurée</p>
+                            <span class="meal_options--captions"><strong>23€</strong></span>
+                        </div>
+                        <button class="meal_btn">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        
+            <!-- Section commande -->
+
+            <button class="order_btn" type="button">Commander</button>
+        </div>
     </main>
 
 <!-- Footer -->
