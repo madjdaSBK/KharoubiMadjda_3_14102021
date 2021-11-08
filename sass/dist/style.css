@@ -291,4 +291,8 @@ figure {
 .main_menu .menu_container .main_header--i {
   font-size: 30px;
 }
+
+.main_menu .menu_container .full_menu {
+  padding-left: 10px;
+}
 /*# sourceMappingURL=style.css.map */

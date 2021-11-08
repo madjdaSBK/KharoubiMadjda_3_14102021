@@ -241,7 +241,6 @@ figure
 
 /* header */
 
-
 .menu_header
 {
     display: flex;
@@ -286,6 +285,10 @@ figure
             {
                 font-size: 30px;
             }
+        }
+        .full_menu
+        {
+            padding-left: 10px;
         }
     }
 }
