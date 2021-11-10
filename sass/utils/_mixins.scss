@@ -8,4 +8,18 @@
     background: linear-gradient($omf_pink, $omf_violet);
     margin: 16px 50px; 
     cursor: pointer;
+    transform: scale(1);
+    transition: background-color 500ms; /* ne fonctionne pas */
+}
+
+@mixin icon_heart {
+    font-size: 30px;
+    &:hover
+    {
+        
+        content: f004;
+        background: linear-gradient($omf_pink, $omf_violet);
+        -webkit-background-text: content-box;
+        -webkit-text-fill-color: transparent;
+    }
 }

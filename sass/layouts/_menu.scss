@@ -29,8 +29,7 @@
             padding-right: 10px;
             &--i
             {
-                font-size: 30px;
-                padding-left: 35px;
+                @include icon_heart;
             }
         }
 

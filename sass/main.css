@@ -174,7 +174,14 @@ header {
 
 .main .main_container .main_header--i {
   font-size: 30px;
-  padding-left: 35px;
+}
+
+.main .main_container .main_header--i:hover {
+  content: f004;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-text: content-box;
+  -webkit-text-fill-color: transparent;
 }
 
 .main .main_container .main_menu .meal .meal_header {
@@ -289,13 +296,13 @@ header {
   border-radius: 5px;
 }
 
-.restaurants .restaurants_cards--img {
+.restaurants .restaurants_cards img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.restaurants .restaurants_cards--caption {
+.restaurants .restaurants_cards figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,15 +313,21 @@ header {
   color: black;
 }
 
-.restaurants .restaurants_cards--caption H4, .restaurants .restaurants_cards--caption p {
+.restaurants .restaurants_cards figcaption H4, .restaurants .restaurants_cards figcaption p {
   margin: initial;
   padding-bottom: 5px;
 }
 
-.restaurants .restaurants_cards--caption i {
+.restaurants .restaurants_cards figcaption i {
   font-size: 30px;
-  margin: 3px 10px;
-  color: #252525;
+}
+
+.restaurants .restaurants_cards figcaption i:hover {
+  content: f004;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-text: content-box;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -329,18 +342,24 @@ header {
   background: linear-gradient(#FF79DA, #9356DC);
   margin: 16px 50px;
   cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+  /* ne fonctionne pas */
 }
 
 .btn:hover {
   -webkit-box-shadow: 0 0px 5px 5px #727171;
           box-shadow: 0 0px 5px 5px #727171;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
   opacity: 0.8;
-  -webkit-transition: background-color 300ms 150ms, -webkit-transform 450ms;
-  transition: background-color 300ms 150ms, -webkit-transform 450ms;
-  transition: transform 450ms, background-color 300ms 150ms;
-  transition: transform 450ms, background-color 300ms 150ms, -webkit-transform 450ms;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  /* j'ai l'impression qu'il n'y a aucune diff*/
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .menu_header {
@@ -358,7 +377,6 @@ header {
 }
 
 .menu_header--i {
-  color: black;
   position: absolute;
   left: 20px;
 }

@@ -4,8 +4,8 @@
     &:hover
     {
         box-shadow: 0 0px 5px 5px $omf_shadow-end;
-        transition: ease 0.3s;
         opacity: 0.8;
-        transition: transform 450ms, background-color 300ms 150ms;
+        transition: transform 400ms; /* j'ai l'impression qu'il n'y a aucune diff*/
+        transform: scale(1.15);
     }
 }
