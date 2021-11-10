@@ -210,6 +210,7 @@ header {
   border-radius: 15px;
   margin: 16px 0;
   padding: 10px;
+  overflow: hidden;
 }
 
 .main .main_container .main_menu .meal .meal_options--title {
@@ -342,10 +343,8 @@ header {
   background: linear-gradient(#FF79DA, #9356DC);
   margin: 16px 50px;
   cursor: pointer;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: background-color 500ms;
-  transition: background-color 500ms;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
   /* ne fonctionne pas */
 }
 
@@ -353,13 +352,9 @@ header {
   -webkit-box-shadow: 0 0px 5px 5px #727171;
           box-shadow: 0 0px 5px 5px #727171;
   opacity: 0.8;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   /* j'ai l'impression qu'il n'y a aucune diff*/
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
 }
 
 .menu_header {

@@ -8,8 +8,7 @@
     background: linear-gradient($omf_pink, $omf_violet);
     margin: 16px 50px; 
     cursor: pointer;
-    transform: scale(1);
-    transition: background-color 500ms; /* ne fonctionne pas */
+    transition: all 400ms; /* ne fonctionne pas */
 }
 
 @mixin icon_heart {
