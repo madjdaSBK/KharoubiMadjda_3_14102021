@@ -42,6 +42,8 @@
             {
                 .meal_header
                 {
+                    justify-content: flex-start;
+                    flex-direction: column;
                     &--title
                     {
                         font-weight: lighter;
