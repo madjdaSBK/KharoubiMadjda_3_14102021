@@ -6,7 +6,7 @@
         background-color: white;
         border-radius: 20px;
         margin-bottom: 16px;
-        span
+        &--new
         {
             position: absolute;
             left: 290px;
@@ -16,12 +16,12 @@
             margin-top: 10px;
             border-radius: 5px;
         }
-        img
+        &--img
         {
             object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
-        figcaption
+        &--caption
         {
             display: flex;
             padding: 16px;
