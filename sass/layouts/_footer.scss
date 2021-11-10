@@ -1,0 +1,27 @@
+.footer
+{
+    padding: 20px;
+    background-color: $omf_dark_grey;
+    &_logo
+    {
+        color: white;
+    }
+    &_container
+    {
+        display: flex;
+        flex-direction: column;
+        &--lines
+        {
+            color: white;
+            padding: 5px; /* Question Quentin : Pourquoi ce padding ne fonctionne pas ? */
+        }
+        &--restaurant
+        {
+            padding-right: 10px;
+        }
+        &--partner
+        {
+            padding-right: 4px;
+        }
+    }
+}
