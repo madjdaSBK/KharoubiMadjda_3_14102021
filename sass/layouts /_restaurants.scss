@@ -1,0 +1,43 @@
+.restaurants
+{
+    background-color: whitesmoke;
+    .restaurants_cards
+    {
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 16px;
+        span
+        {
+            position: absolute;
+            left: 290px;
+            background-color: $omf_green;
+            color: $omg_green--text;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        img
+        {
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        figcaption
+        {
+            display: flex;
+            padding: 16px;
+            justify-content: space-between;
+            color: black;
+            H4, p
+            {
+                margin: initial;
+                padding-bottom: 5px;
+            }
+            i
+            {
+                font-size: 30px;
+                margin: 3px 10px;
+                color: $omf_dark_grey;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.operation
+{
+    ul
+    {
+        padding: 0;
+        margin: 26px;
+        li
+        {
+            display: flex;
+            align-items: center ;
+            margin-bottom: 1em;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            box-shadow: 0 5px 5px 1px rgb(228, 228, 228);
+            padding: 25px 20px;
+            div
+            {
+               background-color: $omf_violet; 
+               color: white;
+               border-radius: 100%;
+               padding: 5px 10px;
+               margin-left: -40px;
+            }
+            i
+            {
+                color: grey;
+                font-size: larger;
+                margin-left: 20px;
+            }
+            span
+            {
+                margin-left: 20px;
+            }
+        }
+    }
+}
