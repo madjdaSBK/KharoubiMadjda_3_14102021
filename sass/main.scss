@@ -1,2 +1,6 @@
-@import"base/fonts", "base/foundations";
-@import "components";
+@import "base/fonts", "base/foundations";
+@import "utils/variables", "utils/animations", "utils/fonctions", "utils/mixins";
+@import "components/btn-about", "components/btn-order", "components/menu-header";
+@import "layouts/about", "layouts/footer", "layouts/header", "layouts/location", "layouts/main", "layouts/operation", "layouts/restaurants";
+@import "pages/menu";
+
