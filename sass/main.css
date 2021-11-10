@@ -279,7 +279,7 @@ header {
   margin-bottom: 16px;
 }
 
-.restaurants .restaurants_cards span {
+.restaurants .restaurants_cards--new {
   position: absolute;
   left: 290px;
   background-color: #99E2D0;
@@ -289,13 +289,13 @@ header {
   border-radius: 5px;
 }
 
-.restaurants .restaurants_cards img {
+.restaurants .restaurants_cards--img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.restaurants .restaurants_cards figcaption {
+.restaurants .restaurants_cards--caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,12 +306,12 @@ header {
   color: black;
 }
 
-.restaurants .restaurants_cards figcaption H4, .restaurants .restaurants_cards figcaption p {
+.restaurants .restaurants_cards--caption H4, .restaurants .restaurants_cards--caption p {
   margin: initial;
   padding-bottom: 5px;
 }
 
-.restaurants .restaurants_cards figcaption i {
+.restaurants .restaurants_cards--caption i {
   font-size: 30px;
   margin: 3px 10px;
   color: #252525;
@@ -332,11 +332,15 @@ header {
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0 0px 10px 10px #c4c3c3;
-          box-shadow: 0 0px 10px 10px #c4c3c3;
+  -webkit-box-shadow: 0 0px 5px 5px #727171;
+          box-shadow: 0 0px 5px 5px #727171;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
   opacity: 0.8;
+  -webkit-transition: background-color 300ms 150ms, -webkit-transform 450ms;
+  transition: background-color 300ms 150ms, -webkit-transform 450ms;
+  transition: transform 450ms, background-color 300ms 150ms;
+  transition: transform 450ms, background-color 300ms 150ms, -webkit-transform 450ms;
 }
 
 .menu_header {
