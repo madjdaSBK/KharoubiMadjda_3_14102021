@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 : Dynamiser une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass main.scss -o dist",
+    "watch": "node-sass main.scss -o dist -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madjdaSBK/Kharoubi_-_14octobre.git"
+  },
+  "author": "Madjda Kharoubi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madjdaSBK/Kharoubi_-_14octobre/issues"
+  },
+  "homepage": "https://github.com/madjdaSBK/Kharoubi_-_14octobre#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
