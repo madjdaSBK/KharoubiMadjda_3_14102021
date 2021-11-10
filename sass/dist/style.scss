@@ -59,6 +59,11 @@ figure
     margin: 0;
 }
 
+button
+{
+    
+}
+
 /* Placer dans layouts/header.scss */
 
 #header
@@ -293,6 +298,9 @@ figure
                 padding-left: 35px;
             }
         }
+
+        /* Menu */
+        
         .main_menu
         {
             .meal
@@ -343,6 +351,8 @@ figure
             }
         }
     }
+
+    /* Bouton commande */
     .order_btn
     {
         border:none;
