@@ -1,3 +1,4 @@
+/* Placer dans utils/variables.scss */
 /* Placer dans base/fonts.scss */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap");
 body {
@@ -39,7 +40,6 @@ figure {
   margin: 0;
 }
 
-/* Placer dans components */
 /* Placer dans layouts/header.scss */
 #header {
   display: -webkit-box;
@@ -112,10 +112,6 @@ figure {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   margin: 16px 80px;
-}
-
-.about .btn:hover {
-  color: red;
 }
 
 /* Section fonctionnement */
@@ -260,11 +256,6 @@ figure {
   color: black;
   position: absolute;
   left: 20px;
-}
-
-/* Main */
-.main {
-  /* Bouton commande */
 }
 
 .main .main_img {

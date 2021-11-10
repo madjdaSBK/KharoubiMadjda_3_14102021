@@ -59,17 +59,6 @@ figure
     margin: 0;
 }
 
-/* Placer dans components */
-
-.btn button{
-    @include btn-about;
-    &:hover {
-      background-color: lighten(#9356dc, 10%);
-      background-blend-mode: lighten;
-      box-shadow: 4px 4px 6px #000;
-    }
-  }
-
 /* Placer dans layouts/header.scss */
 
 #header
