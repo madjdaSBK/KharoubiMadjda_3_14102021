@@ -40,10 +40,7 @@ figure {
   margin: 0;
 }
 
-button, li, a {
-  cursor: pointer;
-}
-
+/* Placer dans components */
 /* Placer dans layouts/header.scss */
 #header {
   display: -webkit-box;
@@ -105,7 +102,7 @@ button, li, a {
   margin: 0;
 }
 
-.about button {
+.about .btn {
   border: none;
   padding: 15px 0 15px 0;
   border-radius: 100px;
@@ -116,6 +113,10 @@ button, li, a {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   margin: 16px 80px;
+}
+
+.about .btn:hover {
+  color: red;
 }
 
 /* Section fonctionnement */
@@ -360,7 +361,7 @@ button, li, a {
   display: none;
 }
 
-.main .order_btn {
+.main .btn {
   border: none;
   padding: 15px 20px;
   border-radius: 100px;
