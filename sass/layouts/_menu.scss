@@ -78,14 +78,32 @@
                         span
                         {
                             margin-right: 10px;
+                            transition: padding-right 450ms ease-in-out;
+                            &:hover
+                            {
+                                padding-right: 75px;
+                            }            
+                            
                         }
                     }
                 }
                 .meal_btn
                 {
-                    display: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $omf_green;
+                    width: 50px;
+                    height: 63px;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    position: absolute;
+                    padding: 20px;
+                    transition: transform 330ms ease-in-out;
                 }
             }
         }
+
+        
     }
 }
