@@ -211,6 +211,12 @@ header {
   margin: 16px 0;
   padding: 10px;
   overflow: hidden;
+  -webkit-transition: padding-right 450ms ease-in-out;
+  transition: padding-right 450ms ease-in-out;
+}
+
+.main .main_container .main_menu .meal .meal_options:hover {
+  padding-right: 75px;
 }
 
 .main .main_container .main_menu .meal .meal_options--title {
@@ -233,23 +239,38 @@ header {
 
 .main .main_container .main_menu .meal .meal_options--figcaption span {
   margin-right: 10px;
-  -webkit-transition: padding-right 450ms ease-in-out;
-  transition: padding-right 450ms ease-in-out;
-}
-
-.main .main_container .main_menu .meal .meal_options--figcaption span:hover {
-  padding-right: 75px;
 }
 
 .main .main_container .main_menu .meal .meal_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #99E2D0;
   color: white;
+  width: 40px;
+  height: 54px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 15px 15px 0;
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: 183px;
+  /* Je ne comprends pas pourquoi top ne fonctionne pas :/ */
+  -webkit-transition: -webkit-transform 450ms ease-in-out;
+  transition: -webkit-transform 450ms ease-in-out;
+  transition: transform 450ms ease-in-out;
+  transition: transform 450ms ease-in-out, -webkit-transform 450ms ease-in-out;
+}
+
+.main .main_container .main_menu .meal .meal_btn:hover {
+  -webkit-transform: translate(-10px, 0);
+          transform: translate(-10px, 0);
 }
 
 .operation ul {
