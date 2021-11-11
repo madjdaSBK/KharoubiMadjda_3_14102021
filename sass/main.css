@@ -261,6 +261,7 @@ header {
   position: absolute;
   right: 15px;
   top: 183px;
+  opacity: 0;
   /* Je ne comprends pas pourquoi top ne fonctionne pas :/ */
   -webkit-transition: -webkit-transform 450ms ease-in-out;
   transition: -webkit-transform 450ms ease-in-out;
@@ -271,6 +272,7 @@ header {
 .main .main_container .main_menu .meal .meal_btn:hover {
   -webkit-transform: translate(-10px, 0);
           transform: translate(-10px, 0);
+  opacity: 1;
 }
 
 .operation ul {

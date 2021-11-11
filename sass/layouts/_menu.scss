@@ -101,11 +101,13 @@
                     position: absolute;
                     right: 15px;
                     top: 183px;
+                    opacity: 0;
 /* Je ne comprends pas pourquoi top ne fonctionne pas :/ */
                     transition: transform 450ms ease-in-out;
                     &:hover
                     {
                         transform:translate(-10px, 0);
+                        opacity: 1;
                     }
                     
 
