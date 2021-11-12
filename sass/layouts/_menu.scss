@@ -93,7 +93,7 @@
                     background-color: $omf_green;
                     color: white;
                     width: 40px;
-                    height: 54px;
+                    height: 53px;
                     align-items: center;
                     border-radius: 0 15px 15px 0;
                     font-size: 20px;
@@ -102,7 +102,6 @@
                     right: 15px;
                     top: 183px;
                     opacity: 0;
-/* Je ne comprends pas pourquoi top ne fonctionne pas :/ */
                     transition: transform 450ms ease-in-out;
                     &:hover
                     {

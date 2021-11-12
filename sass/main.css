@@ -177,11 +177,8 @@ header {
 }
 
 .main .main_container .main_header--i:hover {
-  content: f004;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-text: content-box;
-  -webkit-text-fill-color: transparent;
 }
 
 .main .main_container .main_menu .meal .meal_header {
@@ -251,7 +248,7 @@ header {
   background-color: #99E2D0;
   color: white;
   width: 40px;
-  height: 54px;
+  height: 53px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -262,7 +259,6 @@ header {
   right: 15px;
   top: 183px;
   opacity: 0;
-  /* Je ne comprends pas pourquoi top ne fonctionne pas :/ */
   -webkit-transition: -webkit-transform 450ms ease-in-out;
   transition: -webkit-transform 450ms ease-in-out;
   transition: transform 450ms ease-in-out;
@@ -333,7 +329,7 @@ header {
   border-radius: 5px;
 }
 
-.restaurants .restaurants_cards img {
+.restaurants .restaurants_cards--img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0 0;
@@ -360,11 +356,8 @@ header {
 }
 
 .restaurants .restaurants_cards figcaption i:hover {
-  content: f004;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-text: content-box;
-  -webkit-text-fill-color: transparent;
 }
 
 .btn {
