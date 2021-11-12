@@ -203,72 +203,79 @@ header {
 }
 
 .main .main_container .main_menu .meal .meal_options {
-  background-color: white;
-  border-radius: 15px;
-  margin: 16px 0;
-  padding: 10px;
-  overflow: hidden;
-  -webkit-transition: padding-right 450ms ease-in-out;
-  transition: padding-right 450ms ease-in-out;
-}
-
-.main .main_container .main_menu .meal .meal_options:hover {
-  padding-right: 75px;
-}
-
-.main .main_container .main_menu .meal .meal_options--title {
-  margin: initial;
-  margin-bottom: 5px;
-}
-
-.main .main_container .main_menu .meal .meal_options--figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  margin: 16px 0;
+  padding: 10px;
+  height: 40px;
+  -webkit-transition: padding-right 200ms ease-in-out;
+  transition: padding-right 200ms ease-in-out;
 }
 
-.main .main_container .main_menu .meal .meal_options--figcaption p {
+.main .main_container .main_menu .meal .meal_options:hover {
+  padding-right: 75px;
+}
+
+.main .main_container .main_menu .meal .meal_options:hover .meal_options--btn {
+  width: 60px;
+  opacity: 1;
+}
+
+.main .main_container .main_menu .meal .meal_options:hover .fas {
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
+}
+
+.main .main_container .main_menu .meal .meal_options--title, .main .main_container .main_menu .meal .meal_options--text {
   margin: initial;
 }
 
-.main .main_container .main_menu .meal .meal_options--figcaption span {
-  margin-right: 10px;
+.main .main_container .main_menu .meal .meal_options--captions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.main .main_container .main_menu .meal .meal_btn {
+.main .main_container .main_menu .meal .meal_options--btn {
+  background-color: #99E2D0;
+  color: white;
+  width: 0px;
+  height: 60px;
+  border-radius: 0 15px 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #99E2D0;
-  color: white;
-  width: 40px;
-  height: 53px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 0 15px 15px 0;
-  font-size: 20px;
-  padding: 5px;
   position: absolute;
-  right: 15px;
+  right: 16px;
   top: 183px;
+  -webkit-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
   opacity: 0;
-  -webkit-transition: -webkit-transform 450ms ease-in-out;
-  transition: -webkit-transform 450ms ease-in-out;
-  transition: transform 450ms ease-in-out;
-  transition: transform 450ms ease-in-out, -webkit-transform 450ms ease-in-out;
+  font-size: 20px;
 }
 
-.main .main_container .main_menu .meal .meal_btn:hover {
-  -webkit-transform: translate(-10px, 0);
-          transform: translate(-10px, 0);
-  opacity: 1;
+.main .main_container .main_menu .meal .meal_options--btn .fas {
+  -webkit-transform: rotate(-1turn);
+          transform: rotate(-1turn);
+  -webkit-transition: -webkit-transform 350ms ease-in-out;
+  transition: -webkit-transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
 }
 
 .operation ul {

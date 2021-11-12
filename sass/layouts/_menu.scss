@@ -57,63 +57,60 @@
                 }
                 .meal_options
                 {
+                    display: flex;
+                    justify-content: space-between;
                     background-color: white;
                     border-radius: 15px;
                     margin: 16px 0;
                     padding: 10px;
-                    overflow: hidden;
-                    transition: padding-right 450ms ease-in-out;
+                    height: 40px;
+                    transition: padding-right 200ms ease-in-out;
                     &:hover
                     {
                         padding-right: 75px; 
                     }
-                    &--title
+                    &:hover .meal_options--btn
                     {
-                        margin:initial;
-                        margin-bottom: 5px;
-                    }
-                    &--figcaption
-                    {
-                        display: flex;
-                        justify-content: space-between;
-                        p
-                        {
-                            margin: initial;
-                        }
-                        span
-                        {
-                            margin-right: 10px;           
-                        }
-                    }
-                }
-                .meal_btn
-                {
-                    display: flex;
-                    justify-content: center;
-                    background-color: $omf_green;
-                    color: white;
-                    width: 40px;
-                    height: 53px;
-                    align-items: center;
-                    border-radius: 0 15px 15px 0;
-                    font-size: 20px;
-                    padding: 5px;
-                    position: absolute;
-                    right: 15px;
-                    top: 183px;
-                    opacity: 0;
-                    transition: transform 450ms ease-in-out;
-                    &:hover
-                    {
-                        transform:translate(-10px, 0);
+                        width: 60px;
                         opacity: 1;
                     }
-                    
-
-                }
+                    &:hover .fas
+                    {
+                        transform: rotate(0turn);
+                    }
+                    &--title, &--text
+                    {
+                        margin:initial;
+                    }
+                    &--captions
+                    {
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                    &--btn
+                    {
+                        background-color: $omf_green;
+                        color: white;
+                        width: 0px;
+                        height: 60px;
+                        border-radius: 0 15px 15px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position:absolute;
+                        right: 16px;
+                        top: 183px;
+                        transition: width 200ms ease-in-out;
+                        opacity:0;
+                        font-size: 20px;
+                        .fas
+                        {
+                            transform: rotate(-1turn);
+                            transition: transform 350ms ease-in-out;
+                        }
+                    }
+                }  
             }
         }
-
-        
     }
 }
