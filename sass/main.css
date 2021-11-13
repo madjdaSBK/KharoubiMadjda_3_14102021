@@ -209,6 +209,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* est-ce necessaire d'ajouter un align-items ?*/
   background-color: white;
   border-radius: 15px;
   margin: 16px 0;
@@ -234,15 +235,21 @@ header {
 
 .main .main_container .main_menu .meal .meal_options--title, .main .main_container .main_menu .meal .meal_options--text {
   margin: initial;
+  /* pk je n'arrive pas a align-self:flex-end ?*/
 }
 
 .main .main_container .main_menu .meal .meal_options--captions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main_container .main_menu .meal .meal_options--price {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .main .main_container .main_menu .meal .meal_options--btn {

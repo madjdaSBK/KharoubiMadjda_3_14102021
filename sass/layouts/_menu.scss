@@ -58,7 +58,7 @@
                 .meal_options
                 {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-between;/* est-ce necessaire d'ajouter un align-items ?*/
                     background-color: white;
                     border-radius: 15px;
                     margin: 16px 0;
@@ -80,12 +80,17 @@
                     }
                     &--title, &--text
                     {
-                        margin:initial;
+                        margin:initial; /* pk je n'arrive pas a align-self:flex-end ?*/
+        
                     }
                     &--captions
                     {
                         display: flex;
-                        align-items: flex-end;
+                        align-items: center;
+                    }
+                    &--price
+                    {
+                        align-self: flex-end;
                     }
                     &--btn
                     {
