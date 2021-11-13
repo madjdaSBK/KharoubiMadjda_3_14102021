@@ -11,7 +11,7 @@
             object-fit: cover;
         }
     }
-    .main_container
+    .main_container 
     {
         background-color: whitesmoke;
         border-radius: 30px 30px 0 0;
@@ -27,11 +27,68 @@
             justify-content: space-between;
             align-items: center;
             padding-right: 10px;
-            &--i
+            &--heart
             {
-                @include icon_heart;
+                font-size: 30px;
+                background:linear-gradient(#FF79DA, #9356DC);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                .heart_inactive
+                {
+                    opacity: 1;
+                }
+                &:hover .heart_active
+                {
+                    opacity: 1;
+                }
+                &:hover .heart_inactive
+                {
+                    opacity: 1;
+                }
             }
         }
+
+        ul
+        {
+            position: relative;
+            display: flex;
+        }
+        
+        ul li
+        {
+            position: relative;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        ul li .fa
+        {
+            font-size: 30px;
+        }
+
+        ul li::before
+        {
+            font-family: fontAwesome;
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+        }
+
+        ul li:nth-child(1)::before
+        {
+            content: '\f004';
+            color: red;
+        }
+
+        ul li:hover::before
+        {
+            height: 100%;
+        }
+
+
 
         /* Menu */
         

@@ -13,21 +13,4 @@
 
 @mixin icon_heart {
     font-size: 30px;
-    &:hover
-    {
-        background: linear-gradient($omf_pink, $omf_violet);
-    }
-}
-
-@mixin check-circle {
-    &:hover
-    {
-        display: flex;
-        color: white;
-        width: 100px;
-        height: 100px;
-        background: $omf_green;
-        transition: width 0.005s;
-        transition-timing-function: linear;
-    }
 }
