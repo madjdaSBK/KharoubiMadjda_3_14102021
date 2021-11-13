@@ -224,7 +224,6 @@ header {
 
 .main .main_container .main_menu .meal .meal_options:hover .meal_options--btn {
   width: 60px;
-  opacity: 1;
 }
 
 .main .main_container .main_menu .meal .meal_options:hover .fas {
@@ -265,7 +264,6 @@ header {
   top: 183px;
   -webkit-transition: width 200ms ease-in-out;
   transition: width 200ms ease-in-out;
-  opacity: 0;
   font-size: 20px;
 }
 
