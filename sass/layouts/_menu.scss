@@ -72,7 +72,6 @@
                     &:hover .meal_options--btn
                     {
                         width: 60px;
-                        opacity: 1;
                     }
                     &:hover .fas
                     {
@@ -101,7 +100,6 @@
                         right: 16px;
                         top: 183px;
                         transition: width 200ms ease-in-out;
-                        opacity:0;
                         font-size: 20px;
                         .fas
                         {
