@@ -224,6 +224,7 @@ header {
 
 .main .main_container .main_menu .meal .meal_options:hover .meal_options--btn {
   width: 60px;
+  opacity: 1;
 }
 
 .main .main_container .main_menu .meal .meal_options:hover .fas {
@@ -247,7 +248,7 @@ header {
 .main .main_container .main_menu .meal .meal_options--btn {
   background-color: #99E2D0;
   color: white;
-  width: 0px;
+  width: 0;
   height: 60px;
   border-radius: 0 15px 15px 0;
   display: -webkit-box;
@@ -261,10 +262,10 @@ header {
           align-items: center;
   position: absolute;
   right: 16px;
-  top: 183px;
   -webkit-transition: width 200ms ease-in-out;
   transition: width 200ms ease-in-out;
   font-size: 20px;
+  opacity: 0;
 }
 
 .main .main_container .main_menu .meal .meal_options--btn .fas {

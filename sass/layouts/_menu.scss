@@ -72,6 +72,7 @@
                     &:hover .meal_options--btn
                     {
                         width: 60px;
+                        opacity: 1;
                     }
                     &:hover .fas
                     {
@@ -90,7 +91,7 @@
                     {
                         background-color: $omf_green;
                         color: white;
-                        width: 0px;
+                        width: 0;
                         height: 60px;
                         border-radius: 0 15px 15px 0;
                         display: flex;
@@ -98,9 +99,9 @@
                         align-items: center;
                         position:absolute;
                         right: 16px;
-                        top: 183px;
                         transition: width 200ms ease-in-out;
                         font-size: 20px;
+                        opacity: 0;
                         .fas
                         {
                             transform: rotate(-1turn);
