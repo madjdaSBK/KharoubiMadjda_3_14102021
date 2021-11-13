@@ -192,43 +192,6 @@ header {
   opacity: 1;
 }
 
-.main .main_container ul {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main .main_container ul li {
-  position: relative;
-  list-style: none;
-  cursor: pointer;
-}
-
-.main .main_container ul li .fa {
-  font-size: 30px;
-}
-
-.main .main_container ul li::before {
-  font-family: fontAwesome;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.main .main_container ul li:nth-child(1)::before {
-  content: '\f004';
-  color: red;
-}
-
-.main .main_container ul li:hover::before {
-  height: 100%;
-}
-
 .main .main_container .main_menu .meal .meal_header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
