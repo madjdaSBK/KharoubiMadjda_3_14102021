@@ -30,20 +30,29 @@
             &--heart
             {
                 font-size: 30px;
-                background:linear-gradient(#FF79DA, #9356DC);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
                 .heart_inactive
                 {
+                    opacity: 0;
+                    transition: opacity 100ms ease-in-out; 
+                }
+                .heart_active
+                {
                     opacity: 1;
+                    position: absolute;
+                    transition: opacity 100ms ease-in-out; 
+                    
                 }
                 &:hover .heart_active
                 {
-                    opacity: 1;
+                    opacity: 0;
+                    transition: opacity 100ms ease-in-out; 
                 }
                 &:hover .heart_inactive
                 {
                     opacity: 1;
+                    background:linear-gradient(#FF79DA, #9356DC);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }

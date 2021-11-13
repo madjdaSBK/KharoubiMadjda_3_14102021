@@ -37,6 +37,30 @@ figure {
   margin: 0;
 }
 
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,22 +198,33 @@ header {
 
 .main .main_container .main_header--heart {
   font-size: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .main .main_container .main_header--heart .heart_inactive {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+}
+
+.main .main_container .main_header--heart .heart_active {
   opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
 }
 
 .main .main_container .main_header--heart:hover .heart_active {
-  opacity: 1;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
 }
 
 .main .main_container .main_header--heart:hover .heart_inactive {
   opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main .main_container .main_menu .meal .meal_header {
