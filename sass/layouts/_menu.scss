@@ -139,6 +139,18 @@
                     }
                 }  
             }
+            .starter
+            {
+                animation: fadein 3s ease-in-out;
+            }
+            .dishes
+            {
+                 animation: fadein 6s ease-in-out;
+            }
+            .desserts
+            {
+                animation: fadein 9s ease-in-out;
+            }
         }
     }
 }
