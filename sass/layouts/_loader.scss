@@ -32,45 +32,4 @@
     position:absolute;
   }
   
-  
-  @keyframes circle
-   {
-    0%{
-      transform: rotate(0deg) scale(1);
-      border-color: $omf_purple $omf_pink $omf_green;
-    }
-    25%{
-      border-color: $omf_green $omf_purple $omf_pink;
-    }
-    50% {
-      transform: rotate(360deg) scale(1.15);
-      border-color: $omf_pink $omf_green $omf_purple; 
-    }
-    75%{
-      border-color: $omf_purple $omf_pink $omf_green;
-    }
-    100%{
-      transform: rotate(720deg) scale(1);
-      border-color: $omf_green $omf_purple $omf_pink;
-    }
-  }
-  
-  @keyframes color
-   {
-    0%{
-      color: $omf_green;
-    }
-    25%{
-      color: $omf_pink;
-    }
-    50% {
-      color: $omf_purple; 
-    }
-    75%{
-      color: $omf_green;
-    }
-    100%{
-      color: $omf_pink;
-    }
-  }
-  
+ 
