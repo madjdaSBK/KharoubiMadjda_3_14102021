@@ -1,0 +1,76 @@
+.loader_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+  }
+  
+.loader_container--circle
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 16px solid #99e2d0;
+    height: 150px;
+    width: 150px;
+    border-top-color: #ff79da;
+    border-bottom-color: #9356dc;
+    border-radius: 50%;
+    animation: circle 4s linear infinite;
+  }
+  
+  .loader_container--icon {
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9356dc;
+    animation: color 7.5s infinite ease-in-out;
+    position:absolute;
+  }
+  
+  
+  @keyframes circle
+   {
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-color: #9356dc #ff79da #99e2d0;
+    }
+    25%{
+      border-color: #99e2d0 #9356dc #ff79da;
+    }
+    50% {
+      transform: rotate(360deg) scale(1.15);
+      border-color: #ff79da #99e2d0 #9356dc; 
+    }
+    75%{
+      border-color: #9356dc #ff79da #99e2d0;
+    }
+    100%{
+      transform: rotate(720deg) scale(1);
+      border-color: #99e2d0 #9356dc #ff79da;
+    }
+  }
+  
+  @keyframes color
+   {
+    0%{
+      color: #99e2d0;
+    }
+    25%{
+      color: #ff79da;
+    }
+    50% {
+      color: #9356dc; 
+    }
+    75%{
+      color: #99e2d0;
+    }
+    100%{
+      color: #ff79da;
+    }
+  }
+  
