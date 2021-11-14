@@ -141,15 +141,15 @@
             }
             .starter
             {
-                animation: fadein 3s ease-in-out;
+                animation: animate_menus 1s ease-in-out;
             }
             .dishes
             {
-                 animation: fadein 6s ease-in-out;
+                 animation: animate_menus 3s ease-in-out;
             }
             .desserts
             {
-                animation: fadein 9s ease-in-out;
+                 animation: animate_menus 5s ease-in-out;
             }
         }
     }

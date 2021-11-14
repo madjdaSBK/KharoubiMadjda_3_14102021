@@ -37,7 +37,7 @@ figure {
   margin: 0;
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes animate_menus {
   from {
     opacity: 0;
   }
@@ -46,7 +46,7 @@ figure {
   }
 }
 
-@keyframes fadein {
+@keyframes animate_menus {
   from {
     opacity: 0;
   }
@@ -324,18 +324,18 @@ header {
 }
 
 .main .main_container .main_menu .starter {
-  -webkit-animation: fadein 3s ease-in-out;
-          animation: fadein 3s ease-in-out;
+  -webkit-animation: animate_menus 1s ease-in-out;
+          animation: animate_menus 1s ease-in-out;
 }
 
 .main .main_container .main_menu .dishes {
-  -webkit-animation: fadein 6s ease-in-out;
-          animation: fadein 6s ease-in-out;
+  -webkit-animation: animate_menus 3s ease-in-out;
+          animation: animate_menus 3s ease-in-out;
 }
 
 .main .main_container .main_menu .desserts {
-  -webkit-animation: fadein 9s ease-in-out;
-          animation: fadein 9s ease-in-out;
+  -webkit-animation: animate_menus 5s ease-in-out;
+          animation: animate_menus 5s ease-in-out;
 }
 
 .operation ul {
