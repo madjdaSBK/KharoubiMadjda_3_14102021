@@ -1,4 +1,4 @@
-.loader_container 
+.loader
 {
   position: absolute;
   width: 100%;
@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   background-color: whitesmoke;
-  &--circle
+  &_circle
   {
     display: flex;
     align-items: center;
@@ -18,9 +18,9 @@
     border-top-color: $omf_pink;
     border-bottom-color: $omf_purple;
     border-radius: 50%;
-    animation: circle 4s linear infinite;  
+    animation: circle 1s linear infinite;  
   }
-  &--icon 
+  &_icon 
   {
     font-size: 5em;
     display: flex;
