@@ -37,7 +37,7 @@ figure {
   margin: 0;
 }
 
-@-webkit-keyframes animate_menus {
+@-webkit-keyframes anim {
   from {
     opacity: 0;
   }
@@ -46,12 +46,114 @@ figure {
   }
 }
 
-@keyframes animate_menus {
+@keyframes anim {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+    border-color: #9356dc #ff79da #99e2d0;
+  }
+  25% {
+    border-color: #99e2d0 #9356dc #ff79da;
+  }
+  50% {
+    -webkit-transform: rotate(360deg) scale(1.15);
+            transform: rotate(360deg) scale(1.15);
+    border-color: #ff79da #99e2d0 #9356dc;
+  }
+  75% {
+    border-color: #9356dc #ff79da #99e2d0;
+  }
+  100% {
+    -webkit-transform: rotate(720deg) scale(1);
+            transform: rotate(720deg) scale(1);
+    border-color: #9356dc #ff79da #99e2d0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+    border-color: #9356dc #ff79da #99e2d0;
+  }
+  25% {
+    border-color: #99e2d0 #9356dc #ff79da;
+  }
+  50% {
+    -webkit-transform: rotate(360deg) scale(1.15);
+            transform: rotate(360deg) scale(1.15);
+    border-color: #ff79da #99e2d0 #9356dc;
+  }
+  75% {
+    border-color: #9356dc #ff79da #99e2d0;
+  }
+  100% {
+    -webkit-transform: rotate(720deg) scale(1);
+            transform: rotate(720deg) scale(1);
+    border-color: #9356dc #ff79da #99e2d0;
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: #99e2d0;
+  }
+  25% {
+    color: #ff79da;
+  }
+  50% {
+    color: #9356dc;
+  }
+  75% {
+    color: #99e2d0;
+  }
+  100% {
+    color: #ff79da;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: #99e2d0;
+  }
+  25% {
+    color: #ff79da;
+  }
+  50% {
+    color: #9356dc;
+  }
+  75% {
+    color: #99e2d0;
+  }
+  100% {
+    color: #ff79da;
   }
 }
 
@@ -113,6 +215,62 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 16px;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: whitesmoke;
+  -webkit-animation: loader 3s linear;
+          animation: loader 3s linear;
+  opacity: 0;
+}
+
+.loader_circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 16px solid #99E2D0;
+  height: 150px;
+  width: 150px;
+  border-top-color: #FF79DA;
+  border-bottom-color: #9356DC;
+  border-radius: 50%;
+  -webkit-animation: circle 3s linear forwards;
+          animation: circle 3s linear forwards;
+}
+
+.loader_icon {
+  font-size: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #9356DC;
+  -webkit-animation: color 3s forwards;
+          animation: color 3s forwards;
+  position: absolute;
 }
 
 .location {
@@ -214,8 +372,9 @@ header {
 
 .main .main_container .main_header--heart:hover .heart_inactive {
   opacity: 1;
-  background-clip: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -324,18 +483,18 @@ header {
 }
 
 .main .main_container .main_menu .starter {
-  -webkit-animation: animate_menus 1s ease-in-out;
-          animation: animate_menus 1s ease-in-out;
+  -webkit-animation: anim 1s ease-in-out;
+          animation: anim 1s ease-in-out;
 }
 
 .main .main_container .main_menu .dishes {
-  -webkit-animation: animate_menus 3s ease-in-out;
-          animation: animate_menus 3s ease-in-out;
+  -webkit-animation: anim 3s ease-in-out;
+          animation: anim 3s ease-in-out;
 }
 
 .main .main_container .main_menu .desserts {
-  -webkit-animation: animate_menus 5s ease-in-out;
-          animation: animate_menus 5s ease-in-out;
+  -webkit-animation: anim 5s ease-in-out;
+          animation: anim 5s ease-in-out;
 }
 
 .operation ul {

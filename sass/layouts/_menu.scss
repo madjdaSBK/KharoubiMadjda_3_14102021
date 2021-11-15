@@ -142,15 +142,15 @@
             }
             .starter
             {
-                animation: animate_menus 1s ease-in-out;
+                animation: anim 1s ease-in-out;
             }
             .dishes
             {
-                 animation: animate_menus 3s ease-in-out;
+                 animation: anim 3s ease-in-out;
             }
             .desserts
             {
-                 animation: animate_menus 5s ease-in-out;
+                 animation: anim 5s ease-in-out;
             }
         }
     }
