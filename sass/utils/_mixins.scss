@@ -19,12 +19,16 @@
     background-color: whitesmoke;
 }
 
+@mixin padding_sections {
+    padding: 0 16px;
+}
+
 /* Mixin header */
 
 @mixin header {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 /* Mixin boutons */

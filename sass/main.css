@@ -33,14 +33,10 @@ main #operation, #restaurants {
   padding: 40px 30px;
 }
 
-figure {
+figure, h1, h4, p {
   margin: 0;
 }
 
-/* h4 p
-{
-    @include margin0;
-} */
 /* Mixin fondations */
 /* Mixin header */
 /* Mixin boutons */
@@ -219,7 +215,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .loader {
@@ -287,7 +283,7 @@ header {
           align-items: center;
   margin-top: 10px;
   background-color: #e9e9e9;
-  padding: 5px;
+  padding: 0 25px;
   -webkit-box-shadow: 0px 2px 5px #c4c3c3 inset;
           box-shadow: 0px 2px 5px #c4c3c3 inset;
 }
@@ -301,8 +297,7 @@ header {
   border: none;
   font-size: 20px;
   text-align: center;
-  background-color: #e9e9e9;
-  padding-right: 40px;
+  padding: 16px 20px 16px 0;
   font-weight: 400;
 }
 
@@ -638,7 +633,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 16px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 

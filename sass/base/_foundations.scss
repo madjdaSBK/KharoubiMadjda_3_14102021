@@ -24,12 +24,7 @@ main #operation, #restaurants
     padding: 40px 30px;
 }
 
-figure
+figure, h1, h4, p
 {
     margin: 0;
 }
-
-/* h4 p
-{
-    @include margin0;
-} */
