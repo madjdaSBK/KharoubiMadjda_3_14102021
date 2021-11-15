@@ -10,9 +10,7 @@
   animation: loader 3s linear forwards;
   &_circle
   {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display;
     border: 16px solid $omf_green;
     height: 150px;
     width: 150px;
@@ -24,9 +22,7 @@
   &_icon 
   {
     font-size: 5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display;
     color: $omf_purple;
     animation: color 3s forwards;
     position:absolute;

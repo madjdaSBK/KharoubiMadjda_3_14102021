@@ -124,9 +124,7 @@
                         width: 0;
                         height: 60px;
                         border-radius: 0 15px 15px 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include display;
                         position:absolute;
                         right: 16px;
                         transition: width 200ms ease-in-out;
