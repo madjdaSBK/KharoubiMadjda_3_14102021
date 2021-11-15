@@ -123,7 +123,7 @@
                         width: 0;
                         height: 60px;
                         border-radius: 0 15px 15px 0;
-                        @include display;
+                        @include flex-center;
                         position:absolute;
                         right: 16px;
                         transition: width 200ms ease-in-out;
