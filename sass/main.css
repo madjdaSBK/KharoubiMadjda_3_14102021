@@ -173,7 +173,8 @@ figure {
 }
 
 .about h1 {
-  margin: 0;
+  margin: initial;
+  /* H1 pour mixin ? */
 }
 
 .footer {
@@ -432,6 +433,7 @@ header {
 
 .main .main_container .main_menu .meal .meal_options--title, .main .main_container .main_menu .meal .meal_options--text {
   margin: initial;
+  /* H1 pour mixin ? */
   /* pk je n'arrive pas a align-self:flex-end ?*/
 }
 
@@ -573,6 +575,7 @@ header {
 
 .restaurants .restaurants_cards figcaption H4, .restaurants .restaurants_cards figcaption p {
   margin: initial;
+  /* H1 pour mixin ? */
   padding-bottom: 5px;
 }
 

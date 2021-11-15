@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+@mixin margin0 {
+    margin: initial; /* tous les H et p */
+}
+
 @mixin btn {
     border:none;
     padding: 15px 0 15px 0;
