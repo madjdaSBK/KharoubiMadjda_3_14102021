@@ -1,18 +1,18 @@
 .operation
 {
-    ul
+    .operation_container
     {
         padding: 0;
         margin: 26px;
-        li
+        .operation_steps
         {
             @include flex-center;
             margin-bottom: 1em;
-            background-color: red;
+            background-color: whitesmoke;
             border-radius: 20px;
             box-shadow: 0 5px 5px 1px rgb(228, 228, 228);
             padding: 25px 20px;
-            div
+            &--number
             {
                background-color: $omf_purple; 
                color: white;
@@ -20,13 +20,13 @@
                padding: 5px 10px;
                margin-left: -40px;
             }
-            i
+            &--i
             {
                 color: grey;
                 font-size: larger;
                 margin-left: 20px;
             }
-            span
+            &--text
             {
                 margin-left: 20px;
             }
