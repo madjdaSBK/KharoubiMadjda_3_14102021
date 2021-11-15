@@ -1,9 +1,11 @@
 .operation
 {
+    margin-top: 30px;
+    padding: 16px;
     .operation_container
     {
-        padding: 0;
-        margin: 26px;
+        padding: initial;
+        padding: 16px;
         .operation_steps
         {
             display: flex;
@@ -12,7 +14,7 @@
             background-color: whitesmoke;
             border-radius: 20px;
             box-shadow: 0 5px 5px 1px rgb(228, 228, 228);
-            padding: 25px 20px;
+            padding: 16px 20px;
             &--number
             {
                background-color: $omf_purple; 

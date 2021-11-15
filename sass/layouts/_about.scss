@@ -5,4 +5,8 @@
     @include backcolor;
     text-align: center;
     padding: 40px 20px 40px 20px;
+    h1, p
+    {
+        margin: 5px;
+    }
 }

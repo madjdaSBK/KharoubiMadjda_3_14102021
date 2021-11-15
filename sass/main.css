@@ -175,6 +175,10 @@ figure, h1, h4, p {
   padding: 40px 20px 40px 20px;
 }
 
+.about h1, .about p {
+  margin: 5px;
+}
+
 .footer {
   padding: 20px;
   background-color: #252525;
@@ -489,9 +493,14 @@ header {
           animation: anim 5s ease-in-out;
 }
 
+.operation {
+  margin-top: 30px;
+  padding: 16px;
+}
+
 .operation .operation_container {
-  padding: 0;
-  margin: 26px;
+  padding: initial;
+  padding: 16px;
 }
 
 .operation .operation_container .operation_steps {
@@ -506,7 +515,7 @@ header {
   border-radius: 20px;
   -webkit-box-shadow: 0 5px 5px 1px #e4e4e4;
           box-shadow: 0 5px 5px 1px #e4e4e4;
-  padding: 25px 20px;
+  padding: 16px 20px;
 }
 
 .operation .operation_container .operation_steps--number {
