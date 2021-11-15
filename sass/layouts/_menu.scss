@@ -50,7 +50,7 @@
                 &:hover .heart_inactive
                 {
                     opacity: 1;
-                    background:linear-gradient(#FF79DA, #9356DC);
+                    background:linear-gradient($omf_pink, $omf_purple);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
