@@ -15,6 +15,10 @@
     margin: initial;
 }
 
+@mixin backcolor {
+    background-color: whitesmoke;
+}
+
 /* Mixin header */
 
 @mixin header {
