@@ -14,8 +14,7 @@
         margin-bottom: 16px;
         &:hover
         {
-            box-shadow: 0 0px 5px 5px $omf_shadow-end;
-            opacity: 0.8;
+            @include btnhover;
             transform: scale(1.01);
         }
         &--new

@@ -518,6 +518,15 @@ header {
   padding: 16px 20px;
 }
 
+.operation .operation_container .operation_steps:hover {
+  -webkit-box-shadow: 0 0px 10px 0px #727171;
+          box-shadow: 0 0px 10px 0px #727171;
+  opacity: 0.8;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
 .operation .operation_container .operation_steps--number {
   background-color: #9356DC;
   color: white;
@@ -553,9 +562,12 @@ header {
 }
 
 .restaurants_container .restaurants_cards:hover {
-  -webkit-box-shadow: 0 0px 5px 5px #727171;
-          box-shadow: 0 0px 5px 5px #727171;
+  -webkit-box-shadow: 0 0px 10px 0px #727171;
+          box-shadow: 0 0px 10px 0px #727171;
   opacity: 0.8;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
@@ -635,18 +647,16 @@ header {
   background: linear-gradient(#FF79DA, #9356DC);
   margin: 16px 50px;
   cursor: pointer;
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
-  /* ne fonctionne pas */
+  opacity: 1;
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0 0px 5px 5px #727171;
-          box-shadow: 0 0px 5px 5px #727171;
+  -webkit-box-shadow: 0 0px 10px 0px #727171;
+          box-shadow: 0 0px 10px 0px #727171;
   opacity: 0.8;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-  /* j'ai l'impression qu'il n'y a aucune diff*/
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
 }
 
 .menu_header {

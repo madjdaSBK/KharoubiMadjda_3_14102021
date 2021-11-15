@@ -43,7 +43,14 @@
     background: linear-gradient($omf_pink, $omf_purple);
     margin: 16px 50px; 
     cursor: pointer;
-    transition: all 400ms; /* ne fonctionne pas */
+    opacity: 1;
+}
+
+@mixin btnhover {
+    box-shadow: 0 0px 10px 0px $omf_shadow-end;
+    opacity: 0.8;
+    transition: .3s;
+    cursor: pointer;
 }
 
 /* Mixin coeurs */
