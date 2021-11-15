@@ -1,12 +1,21 @@
+/* Mixin fondations */
+
 @mixin display {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;  
+}
+
 @mixin margin0 {
     margin: initial; /* tous les H et p */
 }
+
+/* Mixin boutons */
 
 @mixin btn {
     border:none;

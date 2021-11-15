@@ -8,8 +8,7 @@
     }
     &_container
     {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         &--lines
         {
             color: white;
