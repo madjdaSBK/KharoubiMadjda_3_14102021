@@ -1,7 +1,6 @@
 .menu_header
 {
-    @include flex-center;
-    margin-top: 16px;
+    @include header;
     margin-bottom: 10px;
     &--i
     {

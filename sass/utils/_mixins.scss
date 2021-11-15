@@ -12,7 +12,15 @@
 }
 
 @mixin margin0 {
-    margin: initial; /* tous les H et p */
+    margin: initial;
+}
+
+/* Mixin header */
+
+@mixin header {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
 }
 
 /* Mixin boutons */
