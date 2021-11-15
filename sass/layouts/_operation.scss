@@ -6,7 +6,8 @@
         margin: 26px;
         .operation_steps
         {
-            @include flex-center;
+            display: flex;
+            align-items: center;
             margin-bottom: 1em;
             background-color: whitesmoke;
             border-radius: 20px;

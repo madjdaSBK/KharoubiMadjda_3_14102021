@@ -29,31 +29,22 @@
             padding-right: 10px;
             &--heart
             {
-                font-size: 30px;
-                .heart_inactive
-                {
-                    opacity: 0;
-                    transition: opacity 100ms ease-in-out; 
-                }
+                @include heart_container;
                 .heart_active
                 {
-                    opacity: 1;
-                    position: absolute;
-                    transition: opacity 100ms ease-in-out; 
-                    
+                    @include heart_active;
+                }
+                .heart_inactive
+                {
+                    @include heart_inactive;
                 }
                 &:hover .heart_active
                 {
-                    opacity: 0;
-                    cursor: pointer; 
+                    @include heart_active--hover;
                 }
                 &:hover .heart_inactive
                 {
-                    opacity: 1;
-                    background:linear-gradient($omf_pink, $omf_purple);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    @include heart_inactive--hover;
                 }
             }
         }

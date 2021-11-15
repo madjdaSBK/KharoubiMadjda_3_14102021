@@ -42,6 +42,32 @@
     transition: all 400ms; /* ne fonctionne pas */
 }
 
-@mixin icon_heart {
-    font-size: 30px;
+/* Mixin coeurs */
+
+@mixin heart_container {
+    font-size: 30px; 
+}
+
+@mixin heart_active {
+    opacity: 1;
+    position: absolute;
+    transition: opacity 100ms ease-in-out; 
+}
+
+@mixin heart_active--hover {
+    opacity: 0;
+    cursor: pointer; 
+}
+
+@mixin heart_inactive {
+    opacity: 0;
+    transition: opacity 100ms ease-in-out; 
+}
+
+@mixin heart_inactive--hover {
+    opacity: 1;
+    background:linear-gradient($omf_pink, $omf_purple);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

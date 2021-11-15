@@ -1,6 +1,6 @@
-.restaurants
+.restaurants_container
 {
-    background-color: whitesmoke;
+    @include backcolor;
     .restaurants_cards
     {
         background-color: white;
@@ -16,12 +16,12 @@
             margin-top: 10px;
             border-radius: 5px;
         }
-        &--img /*Ici pk si je met la class ça ne fonctionne pas ? */
+        &--img 
         {
             object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
-        figcaption /*Ici pk si je met la class ça ne fonctionne pas ? */
+        &--figcaption 
         {
             display: flex;
             padding: 16px;
@@ -29,11 +29,28 @@
             color: black;
             H4, p
             {
+                @include margin0;
                 padding-bottom: 5px;
             }
-            i /*Ici pk si je met la class ça ne fonctionne pas ? */
+            .restaurants_cards--heart
             {
-                @include icon_heart;
+                @include heart_container;
+                .heart_active
+                {
+                    @include heart_active;
+                }
+                .heart_inactive
+                {
+                    @include heart_inactive;
+                }
+                &:hover .heart_active
+                {
+                    @include heart_active--hover;
+                }
+                &:hover .heart_inactive
+                {
+                    @include heart_inactive--hover;
+                }
             }
         }
     }

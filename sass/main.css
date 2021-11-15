@@ -7,7 +7,7 @@ p {
   font-weight: lighter;
 }
 
-.footer_logo, main h1 {
+.footer_logo {
   font-family: 'Shrikhand', cursive;
 }
 
@@ -37,6 +37,14 @@ figure {
   margin: 0;
 }
 
+/* h4 p
+{
+    @include margin0;
+} */
+/* Mixin fondations */
+/* Mixin header */
+/* Mixin boutons */
+/* Mixin coeurs */
 @-webkit-keyframes anim {
   from {
     opacity: 0;
@@ -45,7 +53,6 @@ figure {
     opacity: 1;
   }
 }
-
 @keyframes anim {
   from {
     opacity: 0;
@@ -123,7 +130,7 @@ figure {
   }
 }
 
-@-webkit-keyframes color {
+@-webkit-keyframes icon {
   0% {
     color: #99e2d0;
   }
@@ -141,7 +148,7 @@ figure {
   }
 }
 
-@keyframes color {
+@keyframes icon {
   0% {
     color: #99e2d0;
   }
@@ -167,14 +174,9 @@ figure {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: whitesmoke;
   text-align: center;
   padding: 40px 20px 40px 20px;
-  background-color: whitesmoke;
-}
-
-.about h1 {
-  margin: initial;
-  /* H1 pour mixin ? */
 }
 
 .footer {
@@ -221,6 +223,7 @@ header {
 }
 
 .loader {
+  background-color: whitesmoke;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -231,7 +234,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: whitesmoke;
   -webkit-animation: loader 3s linear forwards;
           animation: loader 3s linear forwards;
 }
@@ -268,8 +270,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #9356DC;
-  -webkit-animation: color 3s forwards;
-          animation: color 3s forwards;
+  -webkit-animation: icon 3s forwards;
+          animation: icon 3s forwards;
   position: absolute;
 }
 
@@ -352,15 +354,15 @@ header {
   font-size: 30px;
 }
 
-.main .main_container .main_header--heart .heart_inactive {
-  opacity: 0;
+.main .main_container .main_header--heart .heart_active {
+  opacity: 1;
+  position: absolute;
   -webkit-transition: opacity 100ms ease-in-out;
   transition: opacity 100ms ease-in-out;
 }
 
-.main .main_container .main_header--heart .heart_active {
-  opacity: 1;
-  position: absolute;
+.main .main_container .main_header--heart .heart_inactive {
+  opacity: 0;
   -webkit-transition: opacity 100ms ease-in-out;
   transition: opacity 100ms ease-in-out;
 }
@@ -431,12 +433,6 @@ header {
           transform: rotate(0turn);
 }
 
-.main .main_container .main_menu .meal .meal_options--title, .main .main_container .main_menu .meal .meal_options--text {
-  margin: initial;
-  /* H1 pour mixin ? */
-  /* pk je n'arrive pas a align-self:flex-end ?*/
-}
-
 .main .main_container .main_menu .meal .meal_options--captions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,12 +494,12 @@ header {
           animation: anim 5s ease-in-out;
 }
 
-.operation ul {
+.operation .operation_container {
   padding: 0;
   margin: 26px;
 }
 
-.operation ul li {
+.operation .operation_container .operation_steps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +514,7 @@ header {
   padding: 25px 20px;
 }
 
-.operation ul li div {
+.operation .operation_container .operation_steps--number {
   background-color: #9356DC;
   color: white;
   border-radius: 100%;
@@ -526,27 +522,27 @@ header {
   margin-left: -40px;
 }
 
-.operation ul li i {
+.operation .operation_container .operation_steps--i {
   color: grey;
   font-size: larger;
   margin-left: 20px;
 }
 
-.operation ul li span {
+.operation .operation_container .operation_steps--text {
   margin-left: 20px;
 }
 
-.restaurants {
+.restaurants_container {
   background-color: whitesmoke;
 }
 
-.restaurants .restaurants_cards {
+.restaurants_container .restaurants_cards {
   background-color: white;
   border-radius: 20px;
   margin-bottom: 16px;
 }
 
-.restaurants .restaurants_cards--new {
+.restaurants_container .restaurants_cards--new {
   position: absolute;
   left: 290px;
   background-color: #99E2D0;
@@ -556,13 +552,13 @@ header {
   border-radius: 5px;
 }
 
-.restaurants .restaurants_cards--img {
+.restaurants_container .restaurants_cards--img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.restaurants .restaurants_cards figcaption {
+.restaurants_container .restaurants_cards--figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,14 +569,40 @@ header {
   color: black;
 }
 
-.restaurants .restaurants_cards figcaption H4, .restaurants .restaurants_cards figcaption p {
+.restaurants_container .restaurants_cards--figcaption H4, .restaurants_container .restaurants_cards--figcaption p {
   margin: initial;
-  /* H1 pour mixin ? */
   padding-bottom: 5px;
 }
 
-.restaurants .restaurants_cards figcaption i {
+.restaurants_container .restaurants_cards--figcaption .restaurants_cards--heart {
   font-size: 30px;
+}
+
+.restaurants_container .restaurants_cards--figcaption .restaurants_cards--heart .heart_active {
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+}
+
+.restaurants_container .restaurants_cards--figcaption .restaurants_cards--heart .heart_inactive {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+}
+
+.restaurants_container .restaurants_cards--figcaption .restaurants_cards--heart:hover .heart_active {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.restaurants_container .restaurants_cards--figcaption .restaurants_cards--heart:hover .heart_inactive {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -613,9 +635,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
