@@ -1,6 +1,6 @@
 .location
 {
-    @include display;
+    @include flex-center;
     margin-top: 10px;
     background-color: $omf_map;
     padding: 5px;
