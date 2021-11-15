@@ -61,6 +61,7 @@ figure {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 
@@ -70,6 +71,7 @@ figure {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 
@@ -221,9 +223,7 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -231,9 +231,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: whitesmoke;
-  -webkit-animation: loader 3s linear;
-          animation: loader 3s linear;
-  opacity: 0;
+  -webkit-animation: loader 3s linear forwards;
+          animation: loader 3s linear forwards;
 }
 
 .loader_circle {
