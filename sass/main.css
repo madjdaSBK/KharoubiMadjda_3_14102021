@@ -196,12 +196,12 @@ figure, h1, h4, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 10px;
 }
 
 .footer_container--lines {
   color: white;
-  padding: 5px;
-  /* Question Quentin : Pourquoi ce padding ne fonctionne pas ? */
+  padding: 5px 0;
 }
 
 .footer_container--restaurant {
@@ -538,7 +538,7 @@ header {
 
 .restaurants_container {
   background-color: whitesmoke;
-  padding: 16px;
+  padding: 16px 16px 30px 16px;
 }
 
 .restaurants_container h1 {

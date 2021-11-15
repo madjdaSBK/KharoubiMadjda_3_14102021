@@ -9,10 +9,11 @@
     &_container
     {
         @include flex-column;
+        padding-top: 10px;
         &--lines
         {
             color: white;
-            padding: 5px; /* Question Quentin : Pourquoi ce padding ne fonctionne pas ? */
+            padding: 5px 0 ; 
         }
         &--restaurant
         {
