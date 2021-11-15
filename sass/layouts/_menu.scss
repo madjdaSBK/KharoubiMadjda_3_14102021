@@ -51,6 +51,7 @@
                 {
                     opacity: 1;
                     background:linear-gradient($omf_pink, $omf_purple);
+                    background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
