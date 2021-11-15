@@ -1,0 +1,156 @@
+/* Variables */
+
+$omf_purple:#9356DC;
+$omf_pink:#FF79DA;
+$omf_green:#99E2D0;
+$omg_green--text:#0d8a68;
+$omf_shadow-start:rgb(196, 195, 195);
+$omf_shadow-end:rgb(114, 113, 113);
+$omf_map:rgb(233, 233, 233);
+$omf_dark_grey:#252525;
+$omg_white_smoke: whitesmoke;
+
+/* Keyframes */
+
+@keyframes animate_menus 
+{
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+
+@keyframes circle
+{
+  0%
+  {
+    transform: rotate(0deg) scale(1);
+    border-color: $omf_purple $omf_pink $omf_green;
+  }
+  25%
+  {
+    border-color: $omf_green $omf_purple $omf_pink;
+  }
+  50% 
+  {
+    transform: rotate(360deg) scale(1.15);
+    border-color: $omf_pink $omf_green $omf_purple; 
+  }
+  75%
+  {
+    border-color: $omf_purple $omf_pink $omf_green;
+  }
+  100%
+  {
+    transform: rotate(720deg) scale(1);
+    border-color: $omf_green $omf_purple $omf_pink;
+  }
+}
+  
+@keyframes color
+{
+  0%{
+    color: $omf_green;
+  }
+  25%{
+    color: $omf_pink;
+  }
+  50% {
+    color: $omf_purple; 
+  }
+  75%{
+    color: $omf_green;
+  }
+  100%{
+    color: $omf_pink;
+  }
+}
+
+/* fonts */
+  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap');
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+p
+{
+    font-weight: lighter;
+}
+
+.footer_logo, main h1
+{
+    font-family: 'Shrikhand', cursive;
+}
+
+/* fondations */
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+main img
+{
+    height: 200px;
+    width: 100%;
+}
+
+main #operation, #restaurants
+{
+    padding: 40px 30px;
+}
+
+figure
+{
+    margin: 0;
+}
+
+/* loader */
+
+.loader_container 
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  &--circle
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 16px solid $omf_green;
+    height: 150px;
+    width: 150px;
+    border-top-color: $omf_pink;
+    border-bottom-color: $omf_purple;
+    border-radius: 50%;
+    animation: circle 4s linear infinite;  
+  }
+  &--icon 
+  {
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $omf_purple;
+    animation: color 7.5s infinite ease-in-out;
+    position:absolute;
+  }
+}
