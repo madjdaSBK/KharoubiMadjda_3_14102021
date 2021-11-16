@@ -53,7 +53,7 @@
         
         .main_menu
         {
-            @include dekstop
+            @include tablet_dekstop
             {
                 display: flex;
                 justify-content: space-around;
@@ -79,16 +79,24 @@
                 .meal_options
                 {
                     display: flex;
-                    justify-content: space-between;/* est-ce necessaire d'ajouter un align-items ?*/
+                    justify-content: space-between;
                     background-color: white;
                     border-radius: 15px;
                     margin: 16px 0;
                     padding: 10px;
                     height: 40px;
                     transition: padding-right 200ms ease-in-out;
+                    @include dekstop
+                    {
+                        width: 350px;
+                    }
                     &:hover
                     {
                         padding-right: 75px; 
+                        @include dekstop
+                        {
+                            padding-right: 0px ;
+                        }
                     }
                     &:hover .meal_options--btn
                     {
@@ -99,6 +107,11 @@
                     {
                         transform: rotate(0turn);
                     }
+                    &--texte
+                    {
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
                     &--captions
                     {
                         display: flex;
@@ -107,6 +120,10 @@
                     &--price
                     {
                         align-self: flex-end;
+                        @include dekstop
+                        {
+                            padding-right: 10px;
+                        }
                     }
                     &--btn
                     {
@@ -121,6 +138,11 @@
                         transition: width 200ms ease-in-out;
                         font-size: 20px;
                         opacity: 0;
+                        @include dekstop
+                        {
+                            position:initial;
+                            right: initial;
+                        }
                         .fas
                         {
                             transform: rotate(-1turn);

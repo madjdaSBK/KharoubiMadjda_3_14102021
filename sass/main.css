@@ -14,6 +14,8 @@ p {
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -411,7 +413,7 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 630px) {
   .main .main_container .main_menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -449,7 +451,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* est-ce necessaire d'ajouter un align-items ?*/
   background-color: white;
   border-radius: 15px;
   margin: 16px 0;
@@ -459,8 +460,20 @@ header {
   transition: padding-right 200ms ease-in-out;
 }
 
+@media screen and (min-width: 1280px) {
+  .main .main_container .main_menu .meal .meal_options {
+    width: 350px;
+  }
+}
+
 .main .main_container .main_menu .meal .meal_options:hover {
   padding-right: 75px;
+}
+
+@media screen and (min-width: 1280px) {
+  .main .main_container .main_menu .meal .meal_options:hover {
+    padding-right: 0px;
+  }
 }
 
 .main .main_container .main_menu .meal .meal_options:hover .meal_options--btn {
@@ -471,6 +484,11 @@ header {
 .main .main_container .main_menu .meal .meal_options:hover .fas {
   -webkit-transform: rotate(0turn);
           transform: rotate(0turn);
+}
+
+.main .main_container .main_menu .meal .meal_options--texte {
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .main .main_container .main_menu .meal .meal_options--captions {
@@ -485,6 +503,12 @@ header {
 .main .main_container .main_menu .meal .meal_options--price {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@media screen and (min-width: 1280px) {
+  .main .main_container .main_menu .meal .meal_options--price {
+    padding-right: 10px;
+  }
 }
 
 .main .main_container .main_menu .meal .meal_options--btn {
@@ -508,6 +532,13 @@ header {
   transition: width 200ms ease-in-out;
   font-size: 20px;
   opacity: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .main .main_container .main_menu .meal .meal_options--btn {
+    position: initial;
+    right: initial;
+  }
 }
 
 .main .main_container .main_menu .meal .meal_options--btn .fas {
