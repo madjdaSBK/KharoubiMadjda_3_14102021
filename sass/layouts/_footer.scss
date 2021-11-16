@@ -2,6 +2,12 @@
 {
     padding: 20px;
     background-color: $omf_footer;
+    @include tablet_dekstop
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     &_logo
     {
         color: white;
@@ -10,10 +16,19 @@
     {
         @include flex-column;
         padding-top: 10px;
+        @include tablet_dekstop
+        {
+            flex-direction: initial;
+            padding-top: initial;
+        }
         &--lines
         {
             color: white;
             padding: 5px 0 ; 
+            @include tablet_dekstop
+        {
+            padding: 5px 10px;
+        }
         }
         &--restaurant
         {

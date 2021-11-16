@@ -6,6 +6,9 @@
     {
         padding: initial;
         padding: 16px;
+        @include tablet_dekstop{
+            @include flex-center;
+        }
         .operation_steps
         {
             display: flex;
@@ -36,6 +39,9 @@
             &--text
             {
                 margin-left: 20px;
+            }
+            @include tablet_dekstop{
+                margin: 0px 20px;
             }
         }
     }

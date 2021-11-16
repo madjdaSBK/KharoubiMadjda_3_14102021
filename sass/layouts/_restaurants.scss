@@ -2,16 +2,27 @@
 {
     @include backcolor;
     padding: 16px 16px 30px 16px;
+    @include tablet_dekstop{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
     h1
     {
         margin-top: 16px;
         margin-bottom: 20px;
+        @include tablet_dekstop{
+            width: 100%;
+        }
     }
     .restaurants_cards
     {
         background-color: white;
         border-radius: 20px;
         margin-bottom: 16px;
+        @include tablet_dekstop{
+            width: 40%;
+        }
         &:hover
         {
             @include btnhover;
@@ -26,6 +37,10 @@
             padding: 7px 20px 7px 20px;
             margin-top: 10px;
             border-radius: 5px;
+            @include tablet_dekstop
+            {
+                left: initial;
+            }
         }
         &--img 
         {
