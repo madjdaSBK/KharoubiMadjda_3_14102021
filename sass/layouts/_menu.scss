@@ -53,7 +53,7 @@
         
         .main_menu
         {
-            @include tablet_dekstop
+            @include dekstop
             {
                 display: flex;
                 justify-content: space-around;

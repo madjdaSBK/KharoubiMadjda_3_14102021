@@ -413,7 +413,7 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 1280px) {
   .main .main_container .main_menu {
     display: -webkit-box;
     display: -ms-flexbox;

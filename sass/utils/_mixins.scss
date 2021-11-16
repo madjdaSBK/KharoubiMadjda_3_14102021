@@ -88,9 +88,9 @@
 
 @mixin tablet_dekstop {
     @media screen and (min-width: 630px) { @content; }
-  }
+}
 
-  @mixin dekstop {
+@mixin dekstop {
     @media screen and (min-width: 1280px) { @content; }
-  }
+}
   
