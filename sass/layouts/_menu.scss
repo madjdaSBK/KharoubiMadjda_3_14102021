@@ -53,6 +53,11 @@
         
         .main_menu
         {
+            @include dekstop
+            {
+                display: flex;
+                justify-content: space-around;
+            }
             .meal
             {
                 .meal_header
