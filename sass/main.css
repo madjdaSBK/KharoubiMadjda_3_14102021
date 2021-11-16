@@ -460,6 +460,7 @@ header {
   height: 40px;
   -webkit-transition: padding-right 200ms ease-in-out;
   transition: padding-right 200ms ease-in-out;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1280px) {
