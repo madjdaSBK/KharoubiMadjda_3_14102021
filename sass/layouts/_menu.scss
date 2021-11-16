@@ -98,7 +98,7 @@
                             padding-right: 0px ;
                         }
                     }
-                    &:hover .meal_options--btn
+                    &:hover .meal_options--circle
                     {
                         width: 60px;
                         opacity: 1;
@@ -125,7 +125,7 @@
                             padding-right: 10px;
                         }
                     }
-                    &--btn
+                    &--circle
                     {
                         background-color: $omf_green;
                         color: white;

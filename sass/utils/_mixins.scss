@@ -23,6 +23,17 @@
     padding: 0 16px;
 }
 
+/* Mixin media queries */
+
+@mixin tablet_dekstop {
+    @media screen and (min-width: 630px) { @content; }
+}
+
+@mixin dekstop {
+    @media screen and (min-width: 1280px) { @content; }
+}
+
+
 /* Mixin header */
 
 @mixin header {
@@ -83,14 +94,4 @@
     -webkit-text-fill-color: transparent;
 }
 
-
-/* Media queries */
-
-@mixin tablet_dekstop {
-    @media screen and (min-width: 630px) { @content; }
-}
-
-@mixin dekstop {
-    @media screen and (min-width: 1280px) { @content; }
-}
   

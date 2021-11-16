@@ -41,10 +41,10 @@ figure, h1, h4, p {
 
 /* Couleurs */
 /* Mixin fondations */
+/* Mixin media queries */
 /* Mixin header */
 /* Mixin boutons */
 /* Mixin coeurs */
-/* Media queries */
 @-webkit-keyframes anim {
   from {
     opacity: 0;
@@ -476,7 +476,7 @@ header {
   }
 }
 
-.main .main_container .main_menu .meal .meal_options:hover .meal_options--btn {
+.main .main_container .main_menu .meal .meal_options:hover .meal_options--circle {
   width: 60px;
   opacity: 1;
 }
@@ -511,7 +511,7 @@ header {
   }
 }
 
-.main .main_container .main_menu .meal .meal_options--btn {
+.main .main_container .main_menu .meal .meal_options--circle {
   background-color: #99E2D0;
   color: white;
   width: 0;
@@ -535,13 +535,13 @@ header {
 }
 
 @media screen and (min-width: 1280px) {
-  .main .main_container .main_menu .meal .meal_options--btn {
+  .main .main_container .main_menu .meal .meal_options--circle {
     position: initial;
     right: initial;
   }
 }
 
-.main .main_container .main_menu .meal .meal_options--btn .fas {
+.main .main_container .main_menu .meal .meal_options--circle .fas {
   -webkit-transform: rotate(-1turn);
           transform: rotate(-1turn);
   -webkit-transition: -webkit-transform 350ms ease-in-out;
