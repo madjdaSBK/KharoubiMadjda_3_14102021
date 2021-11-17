@@ -435,7 +435,7 @@ header {
           transform: rotate(0turn);
 }
 
-.meal_options--texte {
+.meal_options div {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
