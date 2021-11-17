@@ -15,9 +15,6 @@
     margin: initial;
 }
 
-@mixin backcolor {
-    background-color: whitesmoke;
-}
 
 @mixin padding_sections {
     padding: 0 16px;
@@ -32,7 +29,6 @@
 @mixin dekstop {
     @media screen and (min-width: 1280px) { @content; }
 }
-
 
 /* Mixin header */
 
