@@ -1,6 +1,6 @@
 .restaurants_container
 {
-    @include backcolor;
+    background-color: whitesmoke;
     padding: 16px 16px 30px 16px;
     @include tablet_dekstop{
         display: flex;
