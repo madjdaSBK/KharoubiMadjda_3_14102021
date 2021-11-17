@@ -39,7 +39,6 @@ figure, h1, h4, p {
   margin: 0;
 }
 
-/* Couleurs */
 /* Mixin fondations */
 /* Mixin media queries */
 /* Mixin header */
@@ -535,7 +534,6 @@ figure, h1, h4, p {
   transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
 }
 
-/* Main menu */
 .main .main_img {
   width: 100%;
   height: 50vh;
@@ -587,134 +585,6 @@ figure, h1, h4, p {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-}
-
-.main .main_container .main_menu .meal .meal_header {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.main .main_container .main_menu .meal .meal_header--title {
-  font-weight: lighter;
-  margin: initial;
-  margin-bottom: 1%;
-}
-
-.main .main_container .main_menu .meal .meal_header--line {
-  border: 2px solid #99E2D0;
-  width: 10%;
-}
-
-.main .main_container .main_menu .meal .meal_options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: white;
-  border-radius: 15px;
-  margin: 16px 0;
-  padding: 10px;
-  height: 40px;
-  -webkit-transition: padding-right 200ms ease-in-out;
-  transition: padding-right 200ms ease-in-out;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 1280px) {
-  .main .main_container .main_menu .meal .meal_options {
-    width: 350px;
-  }
-}
-
-.main .main_container .main_menu .meal .meal_options:hover {
-  padding-right: 75px;
-}
-
-@media screen and (min-width: 1280px) {
-  .main .main_container .main_menu .meal .meal_options:hover {
-    padding-right: 0px;
-  }
-}
-
-.main .main_container .main_menu .meal .meal_options:hover .meal_options--circle {
-  width: 60px;
-  opacity: 1;
-}
-
-.main .main_container .main_menu .meal .meal_options:hover .fas {
-  -webkit-transform: rotate(0turn);
-          transform: rotate(0turn);
-}
-
-.main .main_container .main_menu .meal .meal_options--texte {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.main .main_container .main_menu .meal .meal_options--captions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main .main_container .main_menu .meal .meal_options--price {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-@media screen and (min-width: 1280px) {
-  .main .main_container .main_menu .meal .meal_options--price {
-    padding-right: 10px;
-  }
-}
-
-.main .main_container .main_menu .meal .meal_options--circle {
-  background-color: #99E2D0;
-  color: white;
-  width: 0;
-  height: 60px;
-  border-radius: 0 15px 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  right: 16px;
-  -webkit-transition: width 200ms ease-in-out;
-  transition: width 200ms ease-in-out;
-  font-size: 20px;
-  opacity: 0;
-}
-
-@media screen and (min-width: 1280px) {
-  .main .main_container .main_menu .meal .meal_options--circle {
-    position: initial;
-    right: initial;
-  }
-}
-
-.main .main_container .main_menu .meal .meal_options--circle .fas {
-  -webkit-transform: rotate(-1turn);
-          transform: rotate(-1turn);
-  -webkit-transition: -webkit-transform 350ms ease-in-out;
-  transition: -webkit-transform 350ms ease-in-out;
-  transition: transform 350ms ease-in-out;
-  transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
 }
 
 .operation {
@@ -880,6 +750,7 @@ figure, h1, h4, p {
   padding-bottom: 5px;
 }
 
+/* Page d'acceuil */
 .restaurants_cards--heart {
   font-size: 30px;
 }
@@ -911,6 +782,7 @@ figure, h1, h4, p {
   -webkit-text-fill-color: transparent;
 }
 
+/* Page menus */
 .main_header--heart {
   font-size: 30px;
 }
