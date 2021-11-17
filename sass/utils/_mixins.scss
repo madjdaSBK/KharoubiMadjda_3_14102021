@@ -73,7 +73,7 @@
 @mixin heart_active {
     opacity: 1;
     position: absolute;
-    transition: opacity 100ms ease-in-out; 
+    transition: all 450ms cubic-bezier(.26,.95,.5,1) 0ms;
 }
 
 @mixin heart_active--hover {
