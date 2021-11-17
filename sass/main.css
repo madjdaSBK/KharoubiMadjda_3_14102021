@@ -407,6 +407,9 @@ header {
   -webkit-transition: padding-right 200ms ease-in-out;
   transition: padding-right 200ms ease-in-out;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 1280px) {
@@ -435,7 +438,14 @@ header {
           transform: rotate(0turn);
 }
 
-.meal_options div {
+.meal_options--text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meal_options--text--p {
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }

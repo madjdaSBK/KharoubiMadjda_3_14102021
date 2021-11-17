@@ -25,6 +25,9 @@
     height: 40px;
     transition: padding-right 200ms ease-in-out;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     @include dekstop
     {
         width: 350px;
@@ -46,9 +49,16 @@
     {
         transform: rotate(0turn);
     }
-    div{
+    &--text{
+        overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        &--p
+        {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; 
+        }
     }
     &--captions
     {
