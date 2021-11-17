@@ -1,3 +1,5 @@
+/* Buttons */
+
 .btn_container
 {
     @include flex-center;
@@ -9,5 +11,52 @@
     &:hover
     {
         @include btnhover;
+    }
+}
+
+/* Hearts */
+
+.restaurants_cards--heart
+{
+    @include heart_container;
+    .heart_active
+    {
+        @include heart_active;
+    }
+    .heart_inactive
+    {
+        @include heart_inactive;
+    }
+    &:hover .heart_active
+    {
+        @include heart_active--hover;
+    }
+    &:hover .heart_inactive
+    {
+        @include heart_inactive--hover;
+    }
+}
+
+.main_header
+{
+    &--heart
+    {
+        @include heart_container;
+        .heart_active
+        {
+            @include heart_active;
+        }
+        .heart_inactive
+        {
+            @include heart_inactive;
+        }
+        &:hover .heart_active
+        {
+            @include heart_active--hover;
+        }
+        &:hover .heart_inactive
+        {
+            @include heart_inactive--hover;
+        }
     }
 }

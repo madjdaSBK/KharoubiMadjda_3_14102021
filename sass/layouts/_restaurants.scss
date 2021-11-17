@@ -58,26 +58,6 @@
                 @include margin0;
                 padding-bottom: 5px;
             }
-            .restaurants_cards--heart
-            {
-                @include heart_container;
-                .heart_active
-                {
-                    @include heart_active;
-                }
-                .heart_inactive
-                {
-                    @include heart_inactive;
-                }
-                &:hover .heart_active
-                {
-                    @include heart_active--hover;
-                }
-                &:hover .heart_inactive
-                {
-                    @include heart_inactive--hover;
-                }
-            }
         }
     }
 }

@@ -1,0 +1,92 @@
+.meal_header
+{
+    justify-content: flex-start;
+    flex-direction: column;
+    &--title
+    {
+        font-weight: lighter;
+        margin:initial;
+        margin-bottom: 1%;
+    }
+    &--line
+    {
+        border: 2px solid $omf_green;
+        width: 10%;
+    }
+}
+.meal_options
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;
+    margin: 16px 0;
+    padding: 10px;
+    height: 40px;
+    transition: padding-right 200ms ease-in-out;
+    cursor: pointer;
+    @include dekstop
+    {
+        width: 350px;
+    }
+    &:hover
+    {
+        padding-right: 75px; 
+        @include dekstop
+        {
+            padding-right: 0px ;
+        }
+    }
+    &:hover .meal_options--circle
+    {
+        width: 60px;
+        opacity: 1;
+    }
+    &:hover .fas
+    {
+        transform: rotate(0turn);
+    }
+    &--texte
+    {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &--captions
+    {
+        display: flex;
+        align-items: center;
+    }
+    &--price
+    {
+        align-self: flex-end;
+        @include dekstop
+        {
+            padding-right: 10px;
+        }
+    }
+    &--circle
+    {
+        background-color: $omf_green;
+        color: white;
+        width: 0;
+        height: 60px;
+        border-radius: 0 15px 15px 0;
+        @include flex-center;
+        position:absolute;
+        right: 16px;
+        transition: width 200ms ease-in-out;
+        font-size: 20px;
+        opacity: 0;
+        @include dekstop
+        {
+            position:initial;
+            right: initial;
+        }
+        .fas
+        {
+            transform: rotate(-1turn);
+            transition: transform 350ms ease-in-out;
+        }
+    }
+}  
+            
