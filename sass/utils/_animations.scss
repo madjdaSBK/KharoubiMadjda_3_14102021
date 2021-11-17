@@ -11,19 +11,18 @@
     }
 }
 
-
 .main_menu
 {
     .starter
     {
-        animation: anim 1s ease-in-out;
+        animation: menu 1s ease-in-out;
     }
     .dishes
     {
-        animation: anim 3s ease-in-out;
+        animation: menu 3s ease-in-out;
     }
     .desserts
     {
-        animation: anim 5s ease-in-out;
+        animation: menu 5s ease-in-out;
     }
 }

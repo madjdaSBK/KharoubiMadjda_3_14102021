@@ -61,21 +61,21 @@ figure, h1, h4, p {
 }
 
 .main_menu .starter {
-  -webkit-animation: anim 1s ease-in-out;
-          animation: anim 1s ease-in-out;
+  -webkit-animation: menu 1s ease-in-out;
+          animation: menu 1s ease-in-out;
 }
 
 .main_menu .dishes {
-  -webkit-animation: anim 3s ease-in-out;
-          animation: anim 3s ease-in-out;
+  -webkit-animation: menu 3s ease-in-out;
+          animation: menu 3s ease-in-out;
 }
 
 .main_menu .desserts {
-  -webkit-animation: anim 5s ease-in-out;
-          animation: anim 5s ease-in-out;
+  -webkit-animation: menu 5s ease-in-out;
+          animation: menu 5s ease-in-out;
 }
 
-@-webkit-keyframes anim {
+@-webkit-keyframes menu {
   from {
     opacity: 0;
   }
@@ -84,7 +84,7 @@ figure, h1, h4, p {
   }
 }
 
-@keyframes anim {
+@keyframes menu {
   from {
     opacity: 0;
   }
