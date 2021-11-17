@@ -444,10 +444,9 @@ header {
   white-space: nowrap;
 }
 
-.meal_options--text--p {
+.meal_options--text p {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .meal_options--captions {

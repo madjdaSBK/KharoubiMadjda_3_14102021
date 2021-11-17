@@ -53,11 +53,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        &--p
+        p
         {
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap; 
         }
     }
     &--captions
