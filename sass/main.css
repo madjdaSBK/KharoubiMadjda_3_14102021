@@ -81,6 +81,13 @@ figure, h1, h4, p {
 @-webkit-keyframes loader {
   0% {
     opacity: 1;
+    display: -webkit-box;
+    display: flex;
+  }
+  50% {
+    opacity: 0.5;
+    display: -webkit-box;
+    display: flex;
   }
   100% {
     opacity: 0;
@@ -91,6 +98,15 @@ figure, h1, h4, p {
 @keyframes loader {
   0% {
     opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  50% {
+    opacity: 0.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   100% {
     opacity: 0;
@@ -273,9 +289,8 @@ header {
 
 .loader {
   background-color: whitesmoke;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  opacity: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
