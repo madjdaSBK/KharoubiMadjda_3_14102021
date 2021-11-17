@@ -51,13 +51,13 @@ figure, h1, h4, p {
 }
 
 .loader_circle {
-  -webkit-animation: circle 3s linear forwards;
-          animation: circle 3s linear forwards;
+  -webkit-animation: loader_circle 3s linear forwards;
+          animation: loader_circle 3s linear forwards;
 }
 
 .loader_icon {
-  -webkit-animation: icon 3s linear forwards;
-          animation: icon 3s linear forwards;
+  -webkit-animation: loader_icon 3s linear forwards;
+          animation: loader_icon 3s linear forwards;
 }
 
 .main_menu .starter {
@@ -129,7 +129,7 @@ figure, h1, h4, p {
   }
 }
 
-@-webkit-keyframes circle {
+@-webkit-keyframes loader_circle {
   0% {
     -webkit-transform: rotate(0deg) scale(1);
             transform: rotate(0deg) scale(1);
@@ -153,7 +153,7 @@ figure, h1, h4, p {
   }
 }
 
-@keyframes circle {
+@keyframes loader_circle {
   0% {
     -webkit-transform: rotate(0deg) scale(1);
             transform: rotate(0deg) scale(1);
@@ -177,7 +177,7 @@ figure, h1, h4, p {
   }
 }
 
-@-webkit-keyframes icon {
+@-webkit-keyframes loader_icon {
   0% {
     color: #99e2d0;
   }
@@ -195,7 +195,7 @@ figure, h1, h4, p {
   }
 }
 
-@keyframes icon {
+@keyframes loader_icon {
   0% {
     color: #99e2d0;
   }

@@ -23,7 +23,7 @@
 }
   
 
-@keyframes circle {
+@keyframes loader_circle {
   0%{
     transform: rotate(0deg) scale(1);
     border-color: #9356dc #ff79da #99e2d0;
@@ -44,7 +44,7 @@
   }
 }
 
-@keyframes icon
+@keyframes loader_icon
 {
   0%{
     color: #99e2d0;
