@@ -1,21 +1,3 @@
-/* Buttons */
-
-.btn_container
-{
-    @include flex-center;
-}
-
-.btn
-{
-    @include btn;
-    &:hover
-    {
-        @include btnhover;
-    }
-}
-
-/* Hearts */
-
 .restaurants_cards--heart
 {
     @include heart_container;

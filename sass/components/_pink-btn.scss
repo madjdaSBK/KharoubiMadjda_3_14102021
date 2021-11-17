@@ -1,0 +1,13 @@
+.btn_container
+{
+    @include flex-center;
+}
+
+.btn
+{
+    @include btn;
+    &:hover
+    {
+        @include btnhover;
+    }
+}

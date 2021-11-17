@@ -1,4 +1,15 @@
-header
+.index_header
 {
     @include header;
+}
+
+.menu_header
+{
+    @include header;
+    margin-bottom: 10px;
+    &--i
+    {
+        position: absolute;
+        left: 20px;
+    }
 }

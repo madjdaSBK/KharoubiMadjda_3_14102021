@@ -287,6 +287,22 @@ header {
   margin-top: 20px;
 }
 
+.menu_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.menu_header--i {
+  position: absolute;
+  left: 20px;
+}
+
 .loader {
   background-color: whitesmoke;
   display: none;
