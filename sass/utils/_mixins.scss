@@ -68,13 +68,19 @@
 
 @mixin heart_active {
     opacity: 1;
+    margin-top: 1.5px;
     position: absolute;
-    transition: all 450ms cubic-bezier(.26,.95,.5,1) 0ms;
+    transition: all 350ms cubic-bezier(.26,.95,.5,1) 0ms;
 }
 
 @mixin heart_active--hover {
     opacity: 0;
     cursor: pointer; 
+    background:linear-gradient($omf_pink, $omf_purple);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
 }
 
 @mixin heart_inactive {
