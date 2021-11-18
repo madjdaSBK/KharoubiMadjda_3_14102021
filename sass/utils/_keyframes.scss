@@ -8,17 +8,14 @@
 }
 
 @keyframes loader {
-  0%{
+  0% {
     opacity: 1;
-    display: flex;
   }
-  50%{
+  50% {
     opacity: 0.5;
-    display: flex;
   }
-  100%{
+  100% {
     opacity: 0;
-    display: none;
   }
 }
   
