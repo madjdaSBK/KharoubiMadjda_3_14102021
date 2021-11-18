@@ -36,7 +36,7 @@
         {
             @include heart_inactive;
         }
-        &:hover .heart_active
+        &:hover .heart_active 
         {
             @include heart_active--hover;
         }
