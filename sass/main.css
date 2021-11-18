@@ -45,18 +45,18 @@ figure, h1, h4, p {
 /* Mixin boutons */
 /* Mixin coeurs */
 .loader {
-  -webkit-animation: loader 3s linear forwards;
-          animation: loader 3s linear forwards;
+  -webkit-animation: loader 1s linear 3s forwards;
+          animation: loader 1s linear 3s forwards;
 }
 
 .loader_circle {
-  -webkit-animation: loader_circle 3s linear forwards;
-          animation: loader_circle 3s linear forwards;
+  -webkit-animation: loader_circle 3s linear infinite;
+          animation: loader_circle 3s linear infinite;
 }
 
 .loader_icon {
-  -webkit-animation: loader_icon 3s linear forwards;
-          animation: loader_icon 3s linear forwards;
+  -webkit-animation: loader_icon 3s linear infinite;
+          animation: loader_icon 3s linear infinite;
 }
 
 .main_menu .starter {
@@ -95,36 +95,28 @@ figure, h1, h4, p {
 @-webkit-keyframes loader {
   0% {
     opacity: 1;
-    display: -webkit-box;
-    display: flex;
   }
   50% {
     opacity: 0.5;
-    display: -webkit-box;
-    display: flex;
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -9999;
+    overflow: hidden;
   }
 }
 
 @keyframes loader {
   0% {
     opacity: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   50% {
     opacity: 0.5;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -9999;
+    overflow: hidden;
   }
 }
 
@@ -319,10 +311,10 @@ figure, h1, h4, p {
 
 .loader {
   background-color: whitesmoke;
+  padding: initial;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  opacity: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -332,6 +324,8 @@ figure, h1, h4, p {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 100;
+  overflow: hidden;
 }
 
 .loader_circle {

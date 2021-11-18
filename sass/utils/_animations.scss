@@ -3,11 +3,11 @@
     animation: loader 1s linear 3s forwards;
     &_circle
     {
-        animation: loader_circle 1s linear infinite;  
+        animation: loader_circle 3s linear infinite;  
     }
     &_icon 
     {
-        animation: loader_icon 1s linear infinite;
+        animation: loader_icon 3s linear infinite;
     }
 }
 
