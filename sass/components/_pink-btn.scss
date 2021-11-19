@@ -5,9 +5,18 @@
 
 .btn
 {
-    @include btn;
+    border:none;
+    padding: 15px 40px;
+    margin: 15px 0;
+    border-radius: 100px;
+    box-shadow: 0px 1px 10px $omf_shadow-start inset;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient($omf_pink, $omf_purple);
+    cursor: pointer;
+    opacity: 1;
     &:hover
     {
-        @include btnhover;
+        opacity: 0.8;
     }
 }

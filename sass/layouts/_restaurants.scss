@@ -54,7 +54,7 @@
             color: black;
             H4, p
             {
-                @include margin0;
+                margin: initial;
                 padding-bottom: 5px;
             }
         }
