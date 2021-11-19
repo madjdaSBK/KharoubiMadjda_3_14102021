@@ -11,6 +11,11 @@
     flex-direction: column;  
 }
 
+@mixin margin0 {
+    margin: initial;
+}
+
+
 @mixin padding_sections {
     padding: 0 16px;
 }
@@ -31,4 +36,13 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+/* Mixin boutons */
+
+@mixin hover {
+    box-shadow: 0 0px 10px 0px $omf_shadow-end;
+    opacity: 0.8;
+    transition: .3s;
+    cursor: pointer;
 }

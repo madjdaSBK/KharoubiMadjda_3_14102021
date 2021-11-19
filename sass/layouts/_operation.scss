@@ -20,7 +20,7 @@
             padding: 16px 20px;
             &:hover
             {
-                @include btnhover;
+                opacity: 0.8;
             }
             &--number 
             {
