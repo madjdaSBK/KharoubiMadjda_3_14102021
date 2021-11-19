@@ -526,19 +526,19 @@ figure, h1, h4, p {
   transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
 }
 
-.main_pages_menu .menu_img {
+.main_menu_pages .menu_img {
   width: 100%;
   height: 50vh;
 }
 
-.main_pages_menu .menu_img--img {
+.main_menu_pages .menu_img--img {
   width: 100%;
   height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.main_pages_menu .main_container {
+.main_menu_pages .menu_container {
   background-color: whitesmoke;
   border-radius: 30px 30px 0 0;
   margin-top: -100px;
@@ -556,7 +556,7 @@ figure, h1, h4, p {
           justify-content: center;
 }
 
-.main_pages_menu .main_container .main_header {
+.main_menu_pages .menu_container .menu_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,7 +571,7 @@ figure, h1, h4, p {
 }
 
 @media screen and (min-width: 1280px) {
-  .main_pages_menu .main_container .main_menu {
+  .main_menu_pages .menu_container .meal_container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
