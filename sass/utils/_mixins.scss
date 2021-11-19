@@ -41,7 +41,7 @@
 /* Survols des boutons principaux */
 
 @mixin btnhover {
-    box-shadow: 0 0px 10px 0px $omf_shadow-end;
+    box-shadow: 0 0px 10px 0px $box-shadow_end;
     opacity: 0.7;
     transition: .3s;
     cursor: pointer;

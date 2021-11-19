@@ -13,18 +13,18 @@
   &_circle
   {
     @include flex-center;
-    border: 16px solid $omf_green;
+    border: 16px solid $tertiary_color;
     height: 150px;
     width: 150px;
-    border-top-color: $omf_pink;
-    border-bottom-color: $omf_purple;
+    border-top-color: $secondary_color;
+    border-bottom-color: $primary_color;
     border-radius: 50%;  
   }
   &_icon 
   {
     font-size: 5em;
     @include flex-center;
-    color: $omf_purple;
+    color: $primary_color;
     position:absolute;
   }
 }
