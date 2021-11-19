@@ -1,4 +1,4 @@
-/* Mixin fondations */
+/* Fondations */
 
 @mixin flex-center {
     display: flex;
@@ -20,7 +20,7 @@
     padding: 0 16px;
 }
 
-/* Mixin media queries */
+/* Media queries */
 
 @mixin tablet_dekstop {
     @media screen and (min-width: 630px) { @content; }
@@ -30,7 +30,7 @@
     @media screen and (min-width: 1280px) { @content; }
 }
 
-/* Mixin header */
+/* Header */
 
 @mixin header {
     display: flex;
@@ -38,11 +38,11 @@
     margin-top: 20px;
 }
 
-/* Mixin boutons */
+/* Survols des boutons principaux */
 
-@mixin hover {
+@mixin btnhover {
     box-shadow: 0 0px 10px 0px $omf_shadow-end;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: .3s;
     cursor: pointer;
 }

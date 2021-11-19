@@ -39,10 +39,10 @@ figure, h1, h4, p {
   margin: 0;
 }
 
-/* Mixin fondations */
-/* Mixin media queries */
-/* Mixin header */
-/* Mixin boutons */
+/* Fondations */
+/* Media queries */
+/* Header */
+/* Survols des boutons principaux */
 .loader {
   -webkit-animation: loader 1s linear 3s forwards;
           animation: loader 1s linear 3s forwards;
@@ -390,7 +390,7 @@ figure, h1, h4, p {
   font-weight: 400;
 }
 
-.meal_header {
+.meal_titles {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -400,13 +400,12 @@ figure, h1, h4, p {
           flex-direction: column;
 }
 
-.meal_header--title {
+.meal_titles--title {
   font-weight: lighter;
   margin: initial;
-  margin-bottom: 1%;
 }
 
-.meal_header--line {
+.meal_titles--line {
   border: 2px solid #99E2D0;
   width: 10%;
 }
@@ -568,6 +567,7 @@ figure, h1, h4, p {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 10px;
+  margin: 10px 0 30px 0;
 }
 
 @media screen and (min-width: 1280px) {
@@ -620,7 +620,12 @@ figure, h1, h4, p {
 }
 
 .operation .operation_container .operation_steps:hover {
-  opacity: 0.8;
+  -webkit-box-shadow: 0 0px 10px 0px #727171;
+          box-shadow: 0 0px 10px 0px #727171;
+  opacity: 0.7;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
 }
 
 .operation .operation_container .operation_steps--number {
@@ -745,7 +750,7 @@ figure, h1, h4, p {
 .btn:hover {
   -webkit-box-shadow: 0 0px 10px 0px #727171;
           box-shadow: 0 0px 10px 0px #727171;
-  opacity: 0.8;
+  opacity: 0.7;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -766,7 +771,7 @@ figure, h1, h4, p {
 .restaurants_cards:hover {
   -webkit-box-shadow: 0 0px 10px 0px #727171;
           box-shadow: 0 0px 10px 0px #727171;
-  opacity: 0.8;
+  opacity: 0.7;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;

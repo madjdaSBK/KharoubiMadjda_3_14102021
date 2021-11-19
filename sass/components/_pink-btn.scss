@@ -17,6 +17,6 @@
     opacity: 1;
     &:hover
     {
-        @include hover
+        @include btnhover;
     }
 }

@@ -1,4 +1,4 @@
-.meal_header /* deplacer dans components */
+.meal_titles /* deplacer dans components */
 {
     justify-content: flex-start;
     flex-direction: column;
@@ -6,7 +6,6 @@
     {
         font-weight: lighter;
         margin:initial;
-        margin-bottom: 1%;
     }
     &--line
     {
