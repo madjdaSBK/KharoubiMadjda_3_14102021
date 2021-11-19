@@ -1,0 +1,14 @@
+.main_menu_pages
+{
+    .menu_pages_img
+    {
+        width: 100%;
+        height: 50vh;
+        &--img
+        {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+    }
+}
