@@ -423,7 +423,7 @@ figure, h1, h4, p {
 }
 
 @media screen and (min-width: 1280px) {
-  .menu_meals_container .meal_container {
+  .menu_meals_container .meals {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
