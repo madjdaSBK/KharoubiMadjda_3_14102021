@@ -1,6 +1,6 @@
 /* Page d'acceuil */
 
-.restaurants_cards--heart
+.heart
 {
     @include heart_container;
     .heart_active
@@ -18,31 +18,5 @@
     &:hover .heart_inactive
     {
         @include heart_inactive--hover;
-    }
-}
-
-/* Page menus */
-
-.main_header
-{
-    &--heart
-    {
-        @include heart_container;
-        .heart_active
-        {
-            @include heart_active;
-        }
-        .heart_inactive
-        {
-            @include heart_inactive;
-        }
-        &:hover .heart_active 
-        {
-            @include heart_active--hover;
-        }
-        &:hover .heart_inactive
-        {
-            @include heart_inactive--hover;
-        }
     }
 }

@@ -743,11 +743,11 @@ figure, h1, h4, p {
 }
 
 /* Page d'acceuil */
-.restaurants_cards--heart {
+.heart {
   font-size: 30px;
 }
 
-.restaurants_cards--heart .heart_active {
+.heart .heart_active {
   opacity: 1;
   margin-top: 1.5px;
   position: absolute;
@@ -755,13 +755,13 @@ figure, h1, h4, p {
   transition: all 350ms cubic-bezier(0.26, 0.95, 0.5, 1) 0ms;
 }
 
-.restaurants_cards--heart .heart_inactive {
+.heart .heart_inactive {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-in-out;
   transition: opacity 100ms ease-in-out;
 }
 
-.restaurants_cards--heart:hover .heart_active {
+.heart:hover .heart_active {
   opacity: 0;
   cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -772,46 +772,7 @@ figure, h1, h4, p {
   z-index: 2;
 }
 
-.restaurants_cards--heart:hover .heart_inactive {
-  opacity: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Page menus */
-.main_header--heart {
-  font-size: 30px;
-}
-
-.main_header--heart .heart_active {
-  opacity: 1;
-  margin-top: 1.5px;
-  position: absolute;
-  -webkit-transition: all 350ms cubic-bezier(0.26, 0.95, 0.5, 1) 0ms;
-  transition: all 350ms cubic-bezier(0.26, 0.95, 0.5, 1) 0ms;
-}
-
-.main_header--heart .heart_inactive {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in-out;
-  transition: opacity 100ms ease-in-out;
-}
-
-.main_header--heart:hover .heart_active {
-  opacity: 0;
-  cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 2;
-}
-
-.main_header--heart:hover .heart_inactive {
+.heart:hover .heart_inactive {
   opacity: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
