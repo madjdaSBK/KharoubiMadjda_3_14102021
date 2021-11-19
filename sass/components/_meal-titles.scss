@@ -1,0 +1,15 @@
+.meal_titles 
+{
+    justify-content: flex-start;
+    flex-direction: column;
+    &--title
+    {
+        font-weight: lighter;
+        margin:initial;
+    }
+    &--line
+    {
+        border: 2px solid $omf_green;
+        width: 10%;
+    }
+}

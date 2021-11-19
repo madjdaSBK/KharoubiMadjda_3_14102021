@@ -9,40 +9,5 @@
         @include tablet_dekstop{
             @include flex-center;
         }
-        .operation_steps /* deplacer dans components */
-        {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1em;
-            background-color: whitesmoke;
-            border-radius: 20px;
-            box-shadow: 0 5px 5px 1px rgb(228, 228, 228);
-            padding: 16px 20px;
-            &:hover
-            {
-                @include btnhover;
-            }
-            &--number 
-            {
-               background-color: $omf_purple; 
-               color: white;
-               border-radius: 100%;
-               padding: 5px 10px;
-               margin-left: -40px;
-            }
-            &--i
-            {
-                color: grey;
-                font-size: larger;
-                margin-left: 20px;
-            }
-            &--text
-            {
-                margin-left: 20px;
-            }
-            @include tablet_dekstop{
-                margin: 0px 20px;
-            }
-        }
     }
 }
