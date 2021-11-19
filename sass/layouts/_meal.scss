@@ -1,4 +1,4 @@
-.meal_header
+.meal_header /* deplacer dans components */
 {
     justify-content: flex-start;
     flex-direction: column;
@@ -14,7 +14,7 @@
         width: 10%;
     }
 }
-.meal_options
+.meal_options /* deplacer dans components */
 {
     display: flex;
     justify-content: space-between;
@@ -40,7 +40,7 @@
             padding-right: 0px ;
         }
     }
-    &:hover .meal_options--circle
+    &:hover &--circle
     {
         width: 60px;
         opacity: 1;

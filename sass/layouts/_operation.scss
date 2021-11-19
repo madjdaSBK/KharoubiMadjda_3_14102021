@@ -9,7 +9,7 @@
         @include tablet_dekstop{
             @include flex-center;
         }
-        .operation_steps
+        .operation_steps /* deplacer dans components */
         {
             display: flex;
             align-items: center;
@@ -22,7 +22,7 @@
             {
                 @include btnhover;
             }
-            &--number
+            &--number 
             {
                background-color: $omf_purple; 
                color: white;
