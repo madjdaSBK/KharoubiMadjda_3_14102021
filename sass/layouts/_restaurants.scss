@@ -15,48 +15,4 @@
             width: 100%;
         }
     }
-    .restaurants_cards /* deplacer dans components */
-    {
-        background-color: white;
-        border-radius: 20px;
-        margin-bottom: 16px;
-        @include tablet_dekstop{
-            width: 40%;
-        }
-        &:hover
-        {
-            @include btnhover;
-        }
-        &--new
-        {
-            position: absolute;
-            left: 250px;
-            background-color: $omf_green;
-            color: $omg_new;
-            padding: 7px 20px 7px 20px;
-            margin-top: 10px;
-            border-radius: 5px;
-            @include tablet_dekstop
-            {
-                left: initial;
-            }
-        }
-        &--img 
-        {
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
-        }
-        &--figcaption 
-        {
-            display: flex;
-            padding: 10px;
-            justify-content: space-between;
-            color: black;
-            H4, p
-            {
-                margin: initial;
-                padding-bottom: 5px;
-            }
-        }
-    }
 }
