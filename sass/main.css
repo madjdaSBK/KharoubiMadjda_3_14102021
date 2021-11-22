@@ -73,6 +73,56 @@ figure, h1, h4, p {
           animation: menu 5s ease-in-out;
 }
 
+.meals .delay1 {
+  -webkit-animation: plats 600ms ease-in-out;
+          animation: plats 600ms ease-in-out;
+}
+
+.meals .delay2 {
+  -webkit-animation: plats 800ms ease-in-out;
+          animation: plats 800ms ease-in-out;
+}
+
+.meals .delay3 {
+  -webkit-animation: plats 1s ease-in-out;
+          animation: plats 1s ease-in-out;
+}
+
+.meals .delay4 {
+  -webkit-animation: plats 1s ease-in-out;
+          animation: plats 1s ease-in-out;
+}
+
+.meals .delay5 {
+  -webkit-animation: plats 2s ease-in-out;
+          animation: plats 2s ease-in-out;
+}
+
+.meals .delay6 {
+  -webkit-animation: plats 3s ease-in-out;
+          animation: plats 3s ease-in-out;
+}
+
+.meals .delay7 {
+  -webkit-animation: plats 3s ease-in-out;
+          animation: plats 3s ease-in-out;
+}
+
+.meals .delay8 {
+  -webkit-animation: plats 4s ease-in-out;
+          animation: plats 4s ease-in-out;
+}
+
+.meals .delay9 {
+  -webkit-animation: plats 5s ease-in-out;
+          animation: plats 5s ease-in-out;
+}
+
+.meals .delay10 {
+  -webkit-animation: plats 6s ease-in-out;
+          animation: plats 6s ease-in-out;
+}
+
 @-webkit-keyframes menu {
   from {
     opacity: 0;
@@ -88,6 +138,32 @@ figure, h1, h4, p {
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes plats {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes plats {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
