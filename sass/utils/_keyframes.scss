@@ -7,6 +7,9 @@
   }
 }
 
+/* J'ai choisis d'ajouter la @Keyframes plats pour faire apparaitre chaque plats progressivement avec un mouvement en 3d avec la propriété transform: translate3d */
+
+
 @keyframes plats {
   from{
     opacity: 0;

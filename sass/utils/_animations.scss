@@ -25,6 +25,9 @@
     {
         animation: menu 5s ease-in-out;
     }
+
+/* J'ai ajouté des animation avec la @Keyframes plats pour faire apparaitre chaque plats progressivement avec un effet en 3d */
+
     .delay1
     {
         animation: plats 600ms ease-in-out;

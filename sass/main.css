@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap");
 body {
   font-family: 'Roboto', sans-serif;
@@ -56,6 +57,10 @@ figure, h1, h4, p {
 .loader_icon {
   -webkit-animation: loader_icon 3s linear infinite;
           animation: loader_icon 3s linear infinite;
+}
+
+.meals {
+  /* J'ai ajouté des animation avec la @Keyframes plats pour faire apparaitre chaque plats progressivement avec un effet en 3d */
 }
 
 .meals .starter {
@@ -141,6 +146,7 @@ figure, h1, h4, p {
   }
 }
 
+/* J'ai choisis d'ajouter la @Keyframes plats pour faire apparaitre chaque plats progressivement avec un mouvement en 3d avec la propriété transform: translate3d */
 @-webkit-keyframes plats {
   from {
     opacity: 0;
@@ -153,7 +159,6 @@ figure, h1, h4, p {
             transform: none;
   }
 }
-
 @keyframes plats {
   from {
     opacity: 0;
