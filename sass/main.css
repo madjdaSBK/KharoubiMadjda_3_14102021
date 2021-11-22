@@ -58,17 +58,17 @@ figure, h1, h4, p {
           animation: loader_icon 3s linear infinite;
 }
 
-.main_menu .starter {
+.meals .starter {
   -webkit-animation: menu 1s ease-in-out;
           animation: menu 1s ease-in-out;
 }
 
-.main_menu .dishes {
+.meals .dishes {
   -webkit-animation: menu 3s ease-in-out;
           animation: menu 3s ease-in-out;
 }
 
-.main_menu .desserts {
+.meals .desserts {
   -webkit-animation: menu 5s ease-in-out;
           animation: menu 5s ease-in-out;
 }
